@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\title{OGL}
+\author{David Crosby}
+
+\setlength{\parindent}{5ex}
+
+\begin{document}
+OGL -- One Gate logic
+
+Proposition: for all finite sets O, there exists a function op(a,b) in |F(O) where a,b are in O, such that any f(a,b) in |F(O)  can be described by only compositions of op, a, and b. 

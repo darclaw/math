@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{centernot}
+
+%\usepackage{pgfplots}
+
+%stuff for venn diagrams
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
+
+\title{OGL scratch/draft}
+\author{David Crosby}
+\date{20160127}
+
+\setlength{\parindent}{5ex}
+
+%my commands
+\newcommand{\myeq}[2]{\-\hspace{2cm} (#1) #2}
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
+\newcommand{\mymod}[3]{#1\equiv #2\bmod #3}
+\newcommand{\emp}{\varnothing}
+\newcommand{\inv}{^{-1}}
+\newcommand{\ovl}[1]{\overline{#1}}
+
+\begin{document}
+\begin{center}
+\large\Large OGL
+\end{center}
+
+\section{setup}
+Let $U=\{[x]: x\in \mathbb{Z},\, x\leq n\},\, n \in \mathbb{N}$\par
+All functions unless other ways noted maps $U^2 \rightarrow U$\par
+\section{gates}
+$OP(a,b)=$
+\begin{tabular}{c| c c c c c c c}
+	 &0&1&2&\ldots&b&\ldots&n\\ \hline \\
+	0&n&0&0&\ldots&0&\ldots&0\\
+	1&0&0&0&\ldots&0&\ldots&0\\
+	2&0&0&1&\ldots&0&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots&\vdots&\vdots\\
+	a&0&0&0&\ldots&a-1&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots\\
+	n&0&0&0&\ldots&0&\ldots&n-1\\
+\end{tabular}
+\[ =
+	\begin{cases}
+		a-1 & a=b\\
+		0 & a\neq b\\
+	\end{cases}
+\]\par
+$ROT:U\rightarrow U$\par
+$ROT(a)=OP(a,a)$\par
+
+$\ovl{A_0}(a,b)=a$\par
+$\ovl{A_m}(a,b)=ROT(\ovl{A_{m-1}})$\par
+$\ovl{B_0}(a,b)=b$\par
+$\ovl{B_m}(a,b)=ROT(\ovl{B_{m-1}})$\par
+\[ \ovl{F_{ab}}(x,y)=
+	\begin{cases}
+		x-1-a-b& x=y\\
+		-b & x\neq y\\
+	\end{cases}
+\]\par
+$\ovl{F_{a0}}(x,y)=OP(\ovl{A_a},\ovl{B_a})$\par
+$\ovl{F_{ab}}(x,y)=ROT(\ovl{F_{a(b-a)}})$\par
+
+$\ovl{0}=OP(\ovl{A_0},\ovl{A_1})$\par
+$\ovl{0}(x,y)=0$\par
+$\ovl{m}=ROT(\ovl{m+1})$\par
+$\ovl{m}(x,y)=m$\par
+
+\[ \ovl{(a,b,c)}(x,y)=
+	\begin{cases}
+		c & x=a \land  y=b\\
+		0 & x\neq a \lor y\neq b\\
+	\end{cases}
+\]
+\[ \ovl{(a,b,c)}=
+	\begin{cases}
+		\ovl{0} & c=0\\
+		OP(\ovl{F_{(-2-c)0}}(\ovl{A_a},\ovl{B_b}),\ovl{C+1}) & c\neq n-1\\
+		OP(\ovl{F_{(c-1)1}}(\ovl{A_a},\ovl{B_b}),\ovl{0}) & c = n-1\\
+	\end{cases}
+\]
+
+\[ \ovl{S_a}(x,y)=
+	\begin{cases}
+		a & x=a \land y=0\\
+		a & x=0 \land y=a\\
+		0 & \\
+	\end{cases}
+\]
+$\ovl{S_a}=\ovl{F_{(a-1)(-a)}}(\ovl{(0,a,a)},\ovl{(a,0,a)})$\par
+
+$\ovl{AS_{ab}(x,y)}=$\par
+$if(x=0 \lor y=0)\{$\par 
+	$if(x=a \lor y=a)\{$\par 
+		return b\par 
+	$\}if(x=a+1 \lor y=a+1)\{$\par 
+		return b\par
+	$\}$\par 
+$\}else\{ return 0\}$\par
+
+$\ovl{AS_{ab}}=\ovl{F_{(b-1)(-b)}}(\ovl{S_a},\ovl{S_{a+1}})$
+
+$\ovl{PCO_a}(x,y)=$
+\begin{tabular}{c| c c c c c c c c c}
+	 &0&1&2&\ldots&a&a+1&a+2\ldots&n\\ \hline \\
+	0&0&1&2&\ldots&a&0&0\ldots&0 \\
+	1&1&0&0&0&\ldots&0&\ldots&0\\
+	2&2&0&0&0&\ldots&0&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots&\vdots&\vdots\\
+	a&a&0&0&0&\ldots&0&\ldots&0\\
+	a+1&0&0&0&0&\ldots&0&\ldots&0\\
+	a+2&0&0&0&0&\ldots&0&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots\\
+	n&0&0&0&0&\ldots&0&\ldots&0\\
+\end{tabular}\par
+$\ovl{PCO_0}=\ovl{0}$\par
+$\ovl{PCO_1}=\ovl{S_1}$\par
+$\ovl{PCO_2}=\ovl{F_{0(-1)}}(\ovl{S_2},{\ovl{AS_{12}}})$\par
+$\ovl{PCO_a}=\ovl{F_{(-2)(0)}}(\text{the two following tables (needs } \ovl{PCO_{(a-1)(0)}}))$\par
+\begin{tabular}{c| c c c c c c c c c}
+	 &0&1&2&\ldots&a&a+1&a+2\ldots&n\\ \hline \\
+	0&0&0&1&\ldots&a-1&0&0\ldots&0 \\
+	1&0&0&0&0&\ldots&0&\ldots&0\\
+	2&1&0&0&0&\ldots&0&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots&\vdots&\vdots\\
+	a&a-1&0&0&0&\ldots&0&\ldots&0\\
+	a+1&0&0&0&0&\ldots&0&\ldots&0\\
+	a+2&0&0&0&0&\ldots&0&\ldots&0\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots\\
+	n&0&0&0&0&\ldots&0&\ldots&0\\
+\end{tabular}\par
+\vspace{5mm}
+\begin{tabular}{c| c c c c c c c c c}
+	 &0&1&2&\ldots&a&a+1&a+2\ldots&n\\ \hline \\
+	0&1&1&1&\ldots&a-1&1&1\ldots&1 \\
+	1&1&1&1&1&\ldots&1&\ldots&1\\
+	2&1&1&1&1&\ldots&1&\ldots&1\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots&\vdots&\vdots\\
+	a&a-1&1&1&1&\ldots&1&\ldots&1\\
+	a+1&1&1&1&1&\ldots&1&\ldots&1\\
+	a+2&1&1&1&1&\ldots&1&\ldots&1\\
+	\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&\vdots&$\ddots$&\vdots\\
+	n&1&1&1&1&\ldots&1&\ldots&1\\
+\end{tabular}\par
+
+
+
+\end{document}
