@@ -42,6 +42,31 @@ var compose2 = function(f,g,h){
 	}
 }
 
+//takes a function that returns a function with multiple args
+var memomizeFunc2 = function(f, ...args){
+   var map = new Map();
+   var bijOfArgsFunc = function(args){ return args.join();}
+   var bijOfArgs = bijOfArgsFunc(args);
+   if(map.has(bijOfArgs)){
+      return map.get(bijOfArgs);
+   }else{
+      var result = f(...args);
+      var resultMap = new Map();
+      var resultMapFunction= function(...xs){
+         var bijOfXs = bijOfArgsFunc(xs);
+         if(resultMap.has(bijOfArgs)){
+            return resultMap.get(bijOfArgs);
+         }else{
+            var resultFuncResult = result(...xs);
+            map.set(bijOfXs, resultFuncResult);
+            return resultFuncResult;
+         }
+      }
+      map.set(bijOfArgs, resultMapFunction);
+      return resultMapFunction;
+   }
+
+}
 
 
 //size of U
@@ -58,11 +83,13 @@ var op=function(x,y){
 		return 0;
 	}
 }
+//var op = memomizeFunc.bind({}, unMemop);
 
 function rot(x){
 	x=mod(x,size);
 	return op(x,x);
 }
+//var rot = memomizeFunc.bind({}, unMemrot);
 
 //n is the number of rot
 function A(n){
@@ -73,6 +100,8 @@ function A(n){
 		return compose(rot,A(n-1));
 	}
 }
+//var A = memomizeFunc.bind({},umA);
+
 function B(n){
 	n=mod(n,size);
 	if(n==0){
@@ -81,6 +110,7 @@ function B(n){
 		return compose(rot,B(n-1));
 	}
 }
+//var B = memomizeFunc.bind({},umB);
 
 function F(a,b){
 	a=mod(a,size);
@@ -91,6 +121,7 @@ function F(a,b){
 		return compose(rot,F(a,mod(b-1,size)));
 	}
 }
+var F = memomizeFunc2.bind({}, F);
 
 //this is the \ovl{O,1,2},etc funcs
 function N(n){
@@ -101,6 +132,7 @@ function N(n){
 		return compose(rot,N(n+1));
 	}
 }
+var N = memomizeFunc2.bind({}, N);
 
 //isolator, same as \ovl{(a,b,c)}
 function iso(a,b,c){
@@ -126,6 +158,7 @@ function iso(a,b,c){
 		);
 	}
 }
+var iso = memomizeFunc2.bind({}, iso);
 
 function S(a){
 	a=mod(a,size);
@@ -134,8 +167,9 @@ function S(a){
 		iso(0,a,a),iso(a,0,a)
 	);
 }
+var S = memomizeFunc2.bind({}, S);
 
-//errors
+//errors //doesn't seem to
 function AS(a,b){
 	a=mod(a,size);
 	b=mod(b,size);
@@ -144,8 +178,9 @@ function AS(a,b){
 		S(a),S(a+1)
 	);
 }
+var AS = memomizeFunc2.bind({}, AS);
 
-function PCO(a){
+function umPCO(a){
 	a=mod(a,size);
 	if(a==0){
 		return N(0);
@@ -168,6 +203,7 @@ function PCO(a){
 		return PCOprev;
 	}
 }
+var PCO = memomizeFunc2.bind({}, umPCO);
 
 function createNeededTablesForPCOnext(base){
 //create
@@ -240,9 +276,10 @@ print2("S(2)",S(2));
 print2("AS(1,2)",AS(1,2));
 print2("PCO(3)",PCO(3));
 
-var t0=[[0,4,0,3],
-		  [0,1,4,3],
+var t0=[[0,1,0,3],
+		  [0,1,2,3],
 		  [1,0,2,1],
 		  [0,3,3,2]]
+        //[1,2,0,1,4]]
 print2(t0,Pcreate(4,t0));
 

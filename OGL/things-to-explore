@@ -1,0 +1,9 @@
+think about OP as making a tree that has end nodes of X,Y. what other end nodes can work. What other compositions work to create these trees? 
+
+in group G with element g, such that a*g^n=b for every a,b. //* is some operation, not necicaliry multiplication
+	op(x,y)={x*g,  x==y
+			  {c,    x!=y     // c in G
+	perhaps some groups have element O such that 
+	aOb = op(a,b) -- nope, it no existy
+		a!=b!=c!=d
+		((aOb)Ob)Oa!=(aOb)O(bOa)
