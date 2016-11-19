@@ -1,0 +1,13 @@
+cabal: Entering directory '/tmp/cabal-tmp-10850/semigroups-0.18.2'
+Configuring semigroups-0.18.2...
+Building semigroups-0.18.2...
+Preprocessing library semigroups-0.18.2...
+[1 of 3] Compiling Data.List.NonEmpty ( src-ghc7/Data/List/NonEmpty.hs, dist/dist-sandbox-478c2355/build/Data/List/NonEmpty.o )
+[2 of 3] Compiling Data.Semigroup   ( src-ghc7/Data/Semigroup.hs, dist/dist-sandbox-478c2355/build/Data/Semigroup.o )
+[3 of 3] Compiling Data.Semigroup.Generic ( src/Data/Semigroup/Generic.hs, dist/dist-sandbox-478c2355/build/Data/Semigroup/Generic.o )
+Creating package registration file:
+/tmp/pkgConf-semigroups-0.184127760911424268980.2
+Installing library in
+/home/darclaw/projects/math/rth-derivitave/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/semigroups-0.18.2-KJcRn013tbZ97MEBWePjCU
+Registering semigroups-0.18.2...
+cabal: Leaving directory '/tmp/cabal-tmp-10850/semigroups-0.18.2'

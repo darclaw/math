@@ -1,0 +1,13 @@
+cabal: Entering directory '/tmp/cabal-tmp-3872/temporary-1.2.0.4'
+Configuring temporary-1.2.0.4...
+Building temporary-1.2.0.4...
+Preprocessing library temporary-1.2.0.4...
+[1 of 3] Compiling Distribution.Compat.Exception ( Distribution/Compat/Exception.hs, dist/dist-sandbox-478c2355/build/Distribution/Compat/Exception.o )
+[2 of 3] Compiling Distribution.Compat.TempFile ( Distribution/Compat/TempFile.hs, dist/dist-sandbox-478c2355/build/Distribution/Compat/TempFile.o )
+[3 of 3] Compiling System.IO.Temp   ( System/IO/Temp.hs, dist/dist-sandbox-478c2355/build/System/IO/Temp.o )
+Creating package registration file:
+/tmp/pkgConf-temporary-1.2.011311762291653377373.4
+Installing library in
+/home/darclaw/projects/math/rth-derivitave/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/temporary-1.2.0.4-6PsJH0pTb071pKzD6dWd81
+Registering temporary-1.2.0.4...
+cabal: Leaving directory '/tmp/cabal-tmp-3872/temporary-1.2.0.4'

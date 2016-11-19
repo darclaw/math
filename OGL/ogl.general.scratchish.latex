@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{centernot}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+
+%\usepackage{pgfplots}
+
+%stuff for venn diagrams
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
+
+\title{OGL scratch/draft}
+\author{David Crosby}
+\date{20160127}
+
+\setlength{\parindent}{5ex}
+
+%my commands
+\newcommand{\myeq}[2]{\-\hspace{2cm} (#1) #2}
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
+\newcommand{\mymod}[3]{#1\equiv #2\bmod #3}
+\newcommand{\emp}{\varnothing}
+\newcommand{\inv}{^{-1}}
+\newcommand{\ovl}[1]{\overline{#1}}
+%\newcommand{\theorem}[1]{Theorem: #1}
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{corollary}{Corollary}[theorem]
+
+%\newcommand*\lgg{\includegraphics{crazycustomsymbol}}
+\newcommand*\lgg{logish}
+
+\newcommand*\op{op}
+\newcommand*\const{C}
+\newcommand*\rot[1][]{rot_{#1}}
+\newcommand*\ag[1][]{A_{#1}}
+\newcommand*\bg[1][]{B_{#1}}
+\newcommand*\F[2]{F_{#1,#2}}
+\newcommand*\N[1]{\overline{#1}}
+\newcommand*\iso[3]{\overline{(#1,#2,#3)}}
+\newcommand*\Sf[1]{\overline{S_{#1}}}
+\newcommand*\ASf[1]{\overline{AS_{#1}}}
+
+\begin{document}
+\begin{center}
+\large\Large OGL
+\end{center}
+
+\begin{theorem}[ogl]
+	\label{ogl}
+	For any cyclic group $G$ with cardinality $s$ and generator $g$, $g\neq g^0$, there exists a function $f:G^2\rightarrow G$ such that $f$ can be complexly composed with itself to form any function mapping $G^2\rightarrow G$.
+\end{theorem}
+
+Let $\op$ be the function $\op(x,y)=x==y?x*g:\const$ where $\const$ is any element in $G$. Let $\lgg$ be the function $\lgg: G\rightarrow Z_{|G|}$ with rule $\lgg(g^n)=n$. To prove that $\op$ satifies `~'\ref{ogl} we will prove the following lemmas.
+
+\begin{lemma}[rot]
+	let $\rot[n]$ be the function $\rot[1](x) = op(x,x)$, $\rot[n] = \rot(\rot[n-1])$ and $\rot[0](x)=x$. $\rot[n]$ will also have the rule $\rot[n](x)=x*g^{n}$.
+\end{lemma}
+
+\begin{corollary}
+	let the functions $\ag[n]$ and $\bg[n]$ have the rule $\ag[n](x,y)=\rot[n](x)=x*g^n$ and $\bg[n](x,y)=\rot[n](y)$. Thus, $\ag[n](x)=x*g^n$ and $\bg[n]=y*g^n$.
+\end{corollary}
+
+\begin{lemma}[F-funcs]
+	Let $\F{a}{b}$ be a function where $\F{a}{b}(x,y)=\rot[b](\op(\ag[a](x,y),\bg[b](x,y)))$. Thus, $\F{a}{b}(x,y)= x==y?x*g^{a+b+1}:\const*g^b$.
+\end{lemma}
+
+\begin{lemma}[N-funcs]
+	Let $\N{a}(x,y)=\rot[a](op(\ag[0](x,y),\ag[1](x,y)))$. Thus, $\N{a}(x,y)=\const*g^a$.
+\end{lemma}
+
+\begin{lemma}[isolator]
+	Let $\iso{a}{b}{c}(x,y)=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(\ag[a],\bg[b]),\N{g})$, then $\iso{a}{b}{c}(x,y)= (x==g^a)\land (y==g^b)?c:\const$
+\end{lemma}
+
+\begin{lemma}[S]
+	Let $\Sf{a}(x,y)=\F{-a+\lgg(\const)-1}{a-\lgg(\const)}(\iso{g^0}{a}{a}(x,y),\iso{a}{g^0}{a}(x,y))$, then when $a\neq g^0$ $\Sf{a}= (x==g^a\land y==g^0)\lor(x==g^0\land y==g^a)?g^a:\const$
+	%Change to $g^a:g^0$
+\end{lemma}
+
+\begin{lemma}[AS]
+	Let $\ASf{a}{b}(x,y)=$
+\end{lemma}
+%scratch for `~'\ref[isolator]
+%$\iso{a}{b}{d}(x,y)=(x==a\land y==b)?d:c$
+%$=\F{}{}$
+
+\end{document}

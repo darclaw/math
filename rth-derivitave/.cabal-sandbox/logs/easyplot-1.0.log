@@ -1,0 +1,14 @@
+cabal: Entering directory '/tmp/cabal-tmp-1817/easyplot-1.0'
+Configuring easyplot-1.0...
+Building easyplot-1.0...
+Preprocessing library easyplot-1.0...
+[1 of 1] Compiling Graphics.EasyPlot ( src/Graphics/EasyPlot.hs, dist/dist-sandbox-478c2355/build/Graphics/EasyPlot.o )
+
+src/Graphics/EasyPlot.hs:64:1: Warning:
+    Module ‘System.Cmd’ is deprecated: Use "System.Process" instead
+Creating package registration file:
+/tmp/pkgConf-easyplot-17833686901102520059.0
+Installing library in
+/home/darclaw/projects/math/rth-derivitave/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/easyplot-1.0-GUrYZRG7xlF6wKJXtPyTQL
+Registering easyplot-1.0...
+cabal: Leaving directory '/tmp/cabal-tmp-1817/easyplot-1.0'

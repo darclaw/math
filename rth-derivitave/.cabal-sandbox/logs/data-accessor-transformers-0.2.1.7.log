@@ -1,0 +1,18 @@
+cabal: Entering directory '/tmp/cabal-tmp-3872/data-accessor-transformers-0.2.1.7'
+Configuring data-accessor-transformers-0.2.1.7...
+Building data-accessor-transformers-0.2.1.7...
+Preprocessing library data-accessor-transformers-0.2.1.7...
+[1 of 3] Compiling Data.Accessor.Monad.Trans.State ( src/Data/Accessor/Monad/Trans/State.hs, dist/dist-sandbox-478c2355/build/Data/Accessor/Monad/Trans/State.o )
+[2 of 3] Compiling Data.Accessor.Monad.Trans.Example ( src/Data/Accessor/Monad/Trans/Example.hs, dist/dist-sandbox-478c2355/build/Data/Accessor/Monad/Trans/Example.o )
+[3 of 3] Compiling Data.Accessor.Monad.Trans.RWS ( src/Data/Accessor/Monad/Trans/RWS.hs, dist/dist-sandbox-478c2355/build/Data/Accessor/Monad/Trans/RWS.o )
+
+src/Data/Accessor/Monad/Trans/RWS.hs:8:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+Creating package registration file:
+/tmp/pkgConf-data-accessor-transformers-0.2.12145174067468703135.7
+Installing library in
+/home/darclaw/projects/math/rth-derivitave/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/data-accessor-transformers-0.2.1.7-JzISJql6Qs5BdzOB9DTwbO
+Registering data-accessor-transformers-0.2.1.7...
+cabal: Leaving directory '/tmp/cabal-tmp-3872/data-accessor-transformers-0.2.1.7'

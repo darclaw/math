@@ -1,0 +1,44 @@
+cabal: Entering directory '/tmp/cabal-tmp-10849/ad-4.3.2.1'
+[1 of 1] Compiling Main             ( /tmp/cabal-tmp-10849/ad-4.3.2.1/dist/dist-sandbox-478c2355/setup/setup.hs, /tmp/cabal-tmp-10849/ad-4.3.2.1/dist/dist-sandbox-478c2355/setup/Main.o )
+Linking /tmp/cabal-tmp-10849/ad-4.3.2.1/dist/dist-sandbox-478c2355/setup/setup ...
+Configuring ad-4.3.2.1...
+Building ad-4.3.2.1...
+Preprocessing library ad-4.3.2.1...
+[ 1 of 33] Compiling Numeric.AD.Jet   ( src/Numeric/AD/Jet.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Jet.o )
+[ 2 of 33] Compiling Numeric.AD.Mode  ( src/Numeric/AD/Mode.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode.o )
+[ 3 of 33] Compiling Numeric.AD.Internal.Identity ( src/Numeric/AD/Internal/Identity.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Identity.o )
+[ 4 of 33] Compiling Numeric.AD.Jacobian ( src/Numeric/AD/Jacobian.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Jacobian.o )
+[ 5 of 33] Compiling Numeric.AD.Internal.Combinators ( src/Numeric/AD/Internal/Combinators.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Combinators.o )
+[ 6 of 33] Compiling Numeric.AD.Internal.Tower ( src/Numeric/AD/Internal/Tower.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Tower.o )
+[ 7 of 33] Compiling Numeric.AD.Internal.Dense ( src/Numeric/AD/Internal/Dense.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Dense.o )
+[ 8 of 33] Compiling Numeric.AD.Internal.Forward.Double ( src/Numeric/AD/Internal/Forward/Double.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Forward/Double.o )
+[ 9 of 33] Compiling Numeric.AD.Internal.Or ( src/Numeric/AD/Internal/Or.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Or.o )
+[10 of 33] Compiling Numeric.AD.Rank1.Forward.Double ( src/Numeric/AD/Rank1/Forward/Double.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Forward/Double.o )
+[11 of 33] Compiling Numeric.AD.Rank1.Tower ( src/Numeric/AD/Rank1/Tower.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Tower.o )
+[12 of 33] Compiling Numeric.AD.Internal.Type ( src/Numeric/AD/Internal/Type.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Type.o )
+[13 of 33] Compiling Numeric.AD.Mode.Tower ( src/Numeric/AD/Mode/Tower.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Tower.o )
+[14 of 33] Compiling Numeric.AD.Mode.Forward.Double ( src/Numeric/AD/Mode/Forward/Double.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Forward/Double.o )
+[15 of 33] Compiling Numeric.AD.Internal.Sparse ( src/Numeric/AD/Internal/Sparse.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Sparse.o )
+[16 of 33] Compiling Numeric.AD.Rank1.Sparse ( src/Numeric/AD/Rank1/Sparse.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Sparse.o )
+[17 of 33] Compiling Numeric.AD.Mode.Sparse ( src/Numeric/AD/Mode/Sparse.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Sparse.o )
+[18 of 33] Compiling Numeric.AD.Internal.Reverse ( src/Numeric/AD/Internal/Reverse.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Reverse.o )
+[19 of 33] Compiling Numeric.AD.Internal.On ( src/Numeric/AD/Internal/On.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/On.o )
+[20 of 33] Compiling Numeric.AD.Mode.Reverse ( src/Numeric/AD/Mode/Reverse.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Reverse.o )
+[21 of 33] Compiling Numeric.AD.Internal.Kahn ( src/Numeric/AD/Internal/Kahn.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Kahn.o )
+[22 of 33] Compiling Numeric.AD.Rank1.Kahn ( src/Numeric/AD/Rank1/Kahn.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Kahn.o )
+[23 of 33] Compiling Numeric.AD.Mode.Kahn ( src/Numeric/AD/Mode/Kahn.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Kahn.o )
+[24 of 33] Compiling Numeric.AD.Internal.Forward ( src/Numeric/AD/Internal/Forward.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Internal/Forward.o )
+[25 of 33] Compiling Numeric.AD.Rank1.Forward ( src/Numeric/AD/Rank1/Forward.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Forward.o )
+[26 of 33] Compiling Numeric.AD.Rank1.Newton ( src/Numeric/AD/Rank1/Newton.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Newton.o )
+[27 of 33] Compiling Numeric.AD.Rank1.Newton.Double ( src/Numeric/AD/Rank1/Newton/Double.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Newton/Double.o )
+[28 of 33] Compiling Numeric.AD.Mode.Forward ( src/Numeric/AD/Mode/Forward.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Mode/Forward.o )
+[29 of 33] Compiling Numeric.AD.Newton ( src/Numeric/AD/Newton.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Newton.o )
+[30 of 33] Compiling Numeric.AD.Rank1.Halley ( src/Numeric/AD/Rank1/Halley.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Rank1/Halley.o )
+[31 of 33] Compiling Numeric.AD.Halley ( src/Numeric/AD/Halley.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Halley.o )
+[32 of 33] Compiling Numeric.AD.Newton.Double ( src/Numeric/AD/Newton/Double.hs, dist/dist-sandbox-478c2355/build/Numeric/AD/Newton/Double.o )
+[33 of 33] Compiling Numeric.AD       ( src/Numeric/AD.hs, dist/dist-sandbox-478c2355/build/Numeric/AD.o )
+Creating package registration file: /tmp/pkgConf-ad-4.3.28556362261749698586.1
+Installing library in
+/home/darclaw/projects/math/rth-derivitave/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/ad-4.3.2.1-B4YKx5LBvJgFtLezBtz4ks
+Registering ad-4.3.2.1...
+cabal: Leaving directory '/tmp/cabal-tmp-10849/ad-4.3.2.1'
