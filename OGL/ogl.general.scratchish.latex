@@ -44,11 +44,12 @@
 \newcommand*\rot[1][]{rot_{#1}}
 \newcommand*\ag[1][]{A_{#1}}
 \newcommand*\bg[1][]{B_{#1}}
-\newcommand*\F[2]{F_{#1,#2}}
+\newcommand*\F[2]{\overline{F_{#1,#2}}}
 \newcommand*\N[1]{\overline{#1}}
 \newcommand*\iso[3]{\overline{(#1,#2,#3)}}
 \newcommand*\Sf[1]{\overline{S_{#1}}}
-\newcommand*\ASf[1]{\overline{AS_{#1}}}
+\newcommand*\ASf[2]{\overline{AS_{#1,#2}}}
+\newcommand*\pco[1]{\overline{PCO_{#1}}}
 
 \begin{document}
 \begin{center}
@@ -63,7 +64,7 @@
 Let $\op$ be the function $\op(x,y)=x==y?x*g:\const$ where $\const$ is any element in $G$. Let $\lgg$ be the function $\lgg: G\rightarrow Z_{|G|}$ with rule $\lgg(g^n)=n$. To prove that $\op$ satifies `~'\ref{ogl} we will prove the following lemmas.
 
 \begin{lemma}[rot]
-	let $\rot[n]$ be the function $\rot[1](x) = op(x,x)$, $\rot[n] = \rot(\rot[n-1])$ and $\rot[0](x)=x$. $\rot[n]$ will also have the rule $\rot[n](x)=x*g^{n}$.
+	let $\rot[n]$ be the function $\rot[1](x) = op(x,x)$, $\rot[n] = \rot[1](\rot[n-1])$ and $\rot[0](x)=x$. $\rot[n]$ will also have the rule $\rot[n](x)=x*g^{n}$.
 \end{lemma}
 
 \begin{corollary}
@@ -71,25 +72,124 @@ Let $\op$ be the function $\op(x,y)=x==y?x*g:\const$ where $\const$ is any eleme
 \end{corollary}
 
 \begin{lemma}[F-funcs]
-	Let $\F{a}{b}$ be a function where $\F{a}{b}(x,y)=\rot[b](\op(\ag[a](x,y),\bg[b](x,y)))$. Thus, $\F{a}{b}(x,y)= x==y?x*g^{a+b+1}:\const*g^b$.
+	Let $\F{a}{b}$ be a function where $\F{a}{b}(x,y)=\rot[b](\op(\ag[a](x,y),\bg[a](x,y)))$. Thus, $\F{a}{b}(x,y)= x==y?x*g^{a+b+1}:\const*g^b$.
 \end{lemma}
 
 \begin{lemma}[N-funcs]
-	Let $\N{a}(x,y)=\rot[a](op(\ag[0](x,y),\ag[1](x,y)))$. Thus, $\N{a}(x,y)=\const*g^a$.
+	Let $\N{a}(x,y)=\rot[a-\lgg(\const)](op(\ag[0](x,y),\ag[1](x,y)))$. Thus, $\N{a}(x,y)=g^a$.
 \end{lemma}
 
 \begin{lemma}[isolator]
-	Let $\iso{a}{b}{c}(x,y)=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(\ag[a],\bg[b]),\N{g})$, then $\iso{a}{b}{c}(x,y)= (x==g^a)\land (y==g^b)?c:\const$
+	Let $\iso{a}{b}{c}(x,y)=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(\ag[a](x,y),\bg[b](x,y)),\N{g}(x,y))$, then $\iso{a}{b}{c}(x,y)= (x==g^a)\land (y==g^b)?c:\const$
+	
+	%change to g^c:g^0
 \end{lemma}
 
 \begin{lemma}[S]
-	Let $\Sf{a}(x,y)=\F{-a+\lgg(\const)-1}{a-\lgg(\const)}(\iso{g^0}{a}{a}(x,y),\iso{a}{g^0}{a}(x,y))$, then when $a\neq g^0$ $\Sf{a}= (x==g^a\land y==g^0)\lor(x==g^0\land y==g^a)?g^a:\const$
+	Let $\Sf{a}(x,y)=\F{-a-1}{a-\lgg(\const)}(\iso{0}{a}{a}(x,y),\iso{a}{0}{a}(x,y))$, then when $a\neq g^0$ $\Sf{a}= (x==g^a\land y==g^0)\lor(x==g^0\land y==g^a)?g^a:g^0$
 	%Change to $g^a:g^0$
 \end{lemma}
 
 \begin{lemma}[AS]
-	Let $\ASf{a}{b}(x,y)=$
+	Let $\ASf{a}{b}(x,y)=\F{-b+\lgg(\const)-1}{b-\lgg(\const)}(\Sf{a}(x,y),\Sf{a+1}(x,y))$
 \end{lemma}
+
+\begin{lemma}[PCO]
+	let $\pco{0}(x,y)=\N{0}(x,y)$, $\pco{1}(x,y)=\Sf{1}(x,y)$, $\pco{2}(x,y)=\F{\lgg(\const)-2}{1-\lgg(\const)}(\Sf{2}(x,y),\ASf{1}{2}(x,y))$, and $\pco{a}(x,y)=\F{\lgg(\const)}{-\lgg(\const)}(h_a,k_a)$
+
+	where $h_a(x,y)= (x\in\{g^b\| 1\leq b\leq a\}\land y==g^0) \rightarrow g^{\lgg(x)-1} ,\, (y\in\{g^b\| 1\leq b\leq a\}\land x==g^0) \rightarrow g^{\lgg(y)-1} ,\, else \rightarrow g^0$ 
+
+	and $k_a(x,y)= (x\in\{g^b\| 2\leq b\leq a\}\land y==g^0) \rightarrow g^{\lgg(x)-1} ,\, (y\in\{g^b\| 2\leq b\leq a\}\land x==g^0) \rightarrow g^{\lgg(y)-1} ,\, else \rightarrow g^1$ 
+
+	then $\pco{a}(x,y)= (x\in\{g^b\| 0\leq b\leq a\}\land y==g^0) \rightarrow x ,\, (y\in\{g^b\| 2\leq b\leq a\}\land x==g^0) \rightarrow y ,\, else \rightarrow g^0$ 
+
+	%h_a and k_a require pco{a-1} to be created, create h,k from following lemma
+\end{lemma}
+
+\begin{lemma}
+	Let $P(x,y)$ be an arbituary function in G where $P(a,b)=g^{p_{a,b}}$ and for every $a,b \in G$, $p_{a,b}\leq c$ then 
+
+	\begin{equation}
+		\begin{aligned}
+			P(x,y)= {} & \iso{0}{0}{p_{0,0}}(x,y) ``\pco{c}'' \iso{0}{1}{p_{0,1}}(x,y) ``\pco{c}'' \ldots ``\pco{c}'' \iso{0}{s}{p_{0,s}}(x,y) \\
+						& ``\pco{c}'' \iso{1}{0}{p_{1,0}}(x,y) ``\pco{c}'' \iso{1}{1}{p_{1,1}}(x,y) \ldots  ``\pco{c}'' \iso{1}{s}{p_{1,s}}(x,y) \\
+						& ``\pco{c}'' \ldots ``\pco{c}'' \iso{s}{s}{p_{s,s}}(x,y)
+		\end{aligned}
+	\end{equation}
+
+	where $x ``f'' y=f(x,y)$
+
+\end{lemma}
+
+
+\begin{proof}[rot]
+	We will prove that $\rot[n](x)=x*g^n$ by mathematical induction. Let $P(n)=\rot[n](x)$. First, we will show that $P(1)=x*g$. Since $P(1)=\rot[1](x)$, $\rot[1](x)=op(x,x)= x==x?x*g:\const$ and $x==x$ is true, $P(1)=x*g$. Next, we prove the inductive step. Let k be an arbitrary natural number and assume that $P(k)$ is true meaning 
+
+	\myeq{1}{$P(k)=\rot[k](x)=(\rot[1]\circ\rot[1]\circ\dots \text{k-times}\dots\circ\rot[1])(x)=x*g^k$}
+
+	We will now prove $P(k+1)$ is true, that is 
+
+	\myeq{2}{$P(k+1)=(\rot[1]\circ\rot[1]\circ\dots \text{k+1-times}\dots\circ\rot[1])(x)=x*g^{k+1}$}
+
+	By replacing (1) into (2) we obtain $P(k+1)=\rot[1](P(k))=rot(x*g^k)=(x*g^k)*g=x*g^{k+1}$
+
+	This proves the inductive step and by the principle of mathematical induction, the lemma is proved.
+\end{proof}
+
+\begin{proof}[F-funcs]
+	We will prove that $\F{a}{b}(x,y)= x==y?x*g^{a+b+1}:\const*g^b$. Let us consider 2 cases, when $x=y$ and $x\neq y$. When $x=y$, we show that $\F{a}{b}(x,x)=x*g^{a+b+1}$
+	\begin{equation}
+		\begin{aligned}
+			\F{a}{b}(x,x)&=\rot[b](\op(\ag[a](x,x),\bg[a](x,x)))\\
+							 &=\rot[b](\op(x*g^a,x*g^a))\\
+							 &=\rot[b](x*g^a*g)\\
+							 &=x*g^a*g*g^b\\
+							 &=x*g^{a+1+b}\\
+		\end{aligned}
+	\end{equation}
+	Since $x*g^{a+1+b}=\F{a}{b}(x,x)=x*g^{a+b+1}$, this case is shown. In the case that $x\neq y$, we show that $\F{a}{b}(x,y)=\const*g^b$
+	\begin{equation}
+		\begin{aligned}
+			\F{a}{b}(x,y)&=\rot[b](\op(\ag[a](x,y),\bg[a](x,y)))\\
+							 &=\rot[b](\op(x*g^a,y*g^a))\\
+							 &=\rot[b](\const)\\
+							 &=\const*g^b\\
+		\end{aligned}
+	\end{equation}
+	This shows that $\F{a}{b}(x,y)=\const*g^b$ when $x\neq y$. Since both cases are shown, the lemma follows.
+\end{proof}
+
+\begin{proof}[N-funcs]
+	We will show that $\N{a}(x,y)=g^a$. From the definition $\N{a}(x,y)=\rot[a-\lgg(\const)](\op(\ag[0](x,y),\ag[1](x,y)))$ or
+	\begin{equation}
+		\begin{aligned}
+			\N{a}(x,y)&=\rot[a-\lgg(\const)](\op(\ag[0](x,y),\ag[1](x,y)))\\
+						 &=\rot[a-\lgg(\const)](\op(x,x*g))\\
+						 &=\rot[a-\lgg(\const)](\const)\\
+						 &=\const*g^{a-\lgg(\const)-1}\\
+						 &=g^{\lgg(\const)}*g^{a-\lgg(\const)}\\
+						 &=g^{\lgg(\const)+a-\lgg(\const)}\\
+						 &=g^a\\
+		\end{aligned}
+	\end{equation}
+	Thus, $\N{a}(x,y)=g^a$.
+\end{proof}
+
+\begin{proof}[isolator]
+	%do scratch for
+	We will show that $\iso{a}{b}{c}(x,y)= (x==g^a)\land (y==g^b)?c:\const$. Let us consider the two cases where $x=g^a\land y=g^b$ and where $x\neq g^a\lor y\neq g^b$. From the definition, $\iso{a}{b}{c}(x,y)=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(\ag[a](x,y),\bg[b](x,y)),\N{g}(x,y))$, so when $x=g^a \land y=g^b$
+	\begin{equation}
+		\begin{aligned}
+			\iso{a}{b}{c}(g^a,g^b)&=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(\ag[a](g^a,g^b),\bg[b](g^a,g^b)),\N{g}(g^a,g^b))\\
+									&=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(g^{2a},g^{2b}),g)\\
+									&=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(g^a,g^b),g)\\
+									&=\op(\F{\lgg(c)-\lgg(\const)}{-\lgg(\const)}(g^a,g^b),g)\\
+		\end{aligned}
+	\end{equation}
+\end{proof}
+
+
+
 %scratch for `~'\ref[isolator]
 %$\iso{a}{b}{d}(x,y)=(x==a\land y==b)?d:c$
 %$=\F{}{}$
