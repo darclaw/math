@@ -225,7 +225,7 @@ inOglgMap f (IsSubSet a) = (IsSubSet (f a))
 checkInOGLG funcs oglg i 0= TimedOut (funcs, i)--Left (Just funcs,-1)
 checkInOGLG funcs oglg i n
   | any (`S.member` oglg) (S.fromList (map func funcs)) = IsInOGLG ([(\(Just a)-> a) (find (\t -> (func t) `S.member` oglg) funcs)],i) 
-  | length funcs > 18 = TimedOut (funcs, i)-- Left (Just funcs,-2) -- prevents running to long
+  | length funcs > 50 = TimedOut (funcs, i)-- Left (Just funcs,-2) -- prevents running to long
   | otherwise = 
       if length funcs > 9 then trace ("n ="++(show n)++" length funcs = "++(show (length funcs))) compute 
       else compute
