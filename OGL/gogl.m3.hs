@@ -137,6 +137,16 @@ printList xs = mapM_ (\a -> do
 
 numToString n = [(['0'..'9']++['a'..'z']++['A'..'Z']++['ÿ'..]) !! n]
 
+printLessPretty f = do
+   let xs = f
+   putStrLn ("N:"++(show (funcToNum f)))
+   let groupedSquare = groupBy (\(a,_,_) (b,_,_) -> a==b) xs
+   mapM_ (\(a,list) -> do
+       printList (map (\(_,_,num) -> num) list)
+       putStrLn "") 
+       ( zip [0..size^4-1] groupedSquare)
+   putStrLn ""
+
 --for 
 fop1 = [ (0,0,2),(0,1,1),(0,2,1)
       ,(1,0,0),(1,1,0),(1,2,1)
@@ -313,8 +323,11 @@ fact 0 = 1
 fact n = product [1..n]
 
 main = do
-   let x = (findOGLG (allFuncs) eoglg (-1)) -: map (\(f,comp,c) -> (funcToNum f,(inOglgMap (\ts -> sort (map (funcToNum.func) ts)) comp), c))
-   mapM_ (\computation -> putStrLn (show computation)) x
+   --let x = (findOGLG (allFuncs) eoglg (-1)) -: map (\(f,comp,c) -> (funcToNum f,(inOglgMap (\ts -> sort (map (funcToNum.func) ts)) comp), c))
+   --mapM_ (\computation -> putStrLn (show computation)) x
+   mapM_ printLessPretty oglgl
+
+
 
 oglgl = S.toList eoglg
 
