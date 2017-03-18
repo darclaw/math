@@ -1,0 +1,6 @@
+[package]
+name = "goglm3z3"
+version = "0.1.0"
+authors = ["darclaw"]
+
+[dependencies]
