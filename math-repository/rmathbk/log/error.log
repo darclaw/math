@@ -1,0 +1,138 @@
+[09/May/2017:17:44:48 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49824
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49824 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:48 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49828
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49828 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:48 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49832
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49832 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49836
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49836 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49840
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49840 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49846
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49846 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49850
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49850 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49854
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49854 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49858
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49858 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49862
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49862 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49866
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49866 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49870
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49870 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:44:55 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49874
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49874 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:14 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49882
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49882 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:14 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49886
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49886 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:14 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49890
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49890 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:14 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49894
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49894 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:15 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49898
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49898 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:15 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49902
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49902 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:15 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49906
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49906 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:15 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49910
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49910 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:16 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49914
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49914 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)
+[09/May/2017:17:45:16 -0500] Exception leaked to httpSession during phase 'user handler': 
+During processing of request from 127.0.0.1:49918
+request:
+"GET /create HTTP/1.1\naccept-language: en-US,en;q=0.8\naccept-encoding: gzip, deflate, sdch, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36 OPR/44.0.2510.1449\nupgrade-insecure-requests: 1\ncache-control: max-age=0\nconnection: keep-alive\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:49918 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+src/static/html/index.html: getFileStatus: does not exist (No such file or directory)

@@ -1,0 +1,27 @@
+goal
+   a repository of sets of axioms and theorems belonging to said structurs
+   it is to be
+      searchable 
+      addable to
+
+from user perspective
+   adding
+      user makes a category graph thing
+         draws it
+         uploads tikz drawing
+      gives names and theoroms
+   searching
+      makes graph, results pop up as making
+
+frameworks
+   front end
+      graph creation
+         http://js.cytoscape.org/#demos
+      graph context menu
+         https://github.com/iVis-at-Bilkent/cytoscape.js-context-menus
+      latex
+         https://www.mathjax.org
+   backend
+      snap (haskell)
+   database
+      mongodb
