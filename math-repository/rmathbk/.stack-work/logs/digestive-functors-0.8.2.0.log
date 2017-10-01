@@ -1,0 +1,21 @@
+Configuring digestive-functors-0.8.2.0...
+Building digestive-functors-0.8.2.0...
+Preprocessing library digestive-functors-0.8.2.0...
+[ 1 of 10] Compiling Text.Digestive.Util ( src/Text/Digestive/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Util.o )
+[ 2 of 10] Compiling Text.Digestive.Types ( src/Text/Digestive/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Types.o )
+[ 3 of 10] Compiling Text.Digestive.Ref ( src/Text/Digestive/Ref.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Ref.o )
+[ 4 of 10] Compiling Text.Digestive.Form.List ( src/Text/Digestive/Form/List.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Form/List.o )
+[ 5 of 10] Compiling Text.Digestive.Form.Internal.Field ( src/Text/Digestive/Form/Internal/Field.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Form/Internal/Field.o )
+[ 6 of 10] Compiling Text.Digestive.Form.Internal ( src/Text/Digestive/Form/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Form/Internal.o )
+[ 7 of 10] Compiling Text.Digestive.Form.Encoding ( src/Text/Digestive/Form/Encoding.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Form/Encoding.o )
+[ 8 of 10] Compiling Text.Digestive.View ( src/Text/Digestive/View.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/View.o )
+[ 9 of 10] Compiling Text.Digestive.Form ( src/Text/Digestive/Form.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive/Form.o )
+
+src/Text/Digestive/Form.hs:73:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[10 of 10] Compiling Text.Digestive   ( src/Text/Digestive.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Text/Digestive.o )
+Installing library in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/digestive-functors-0.8.2.0-HKYDlQbzCsVDOMzBV1hwdk
+Registering digestive-functors-0.8.2.0...

@@ -1,0 +1,30 @@
+Configuring heist-1.0.1.0...
+Building heist-1.0.1.0...
+Preprocessing library heist-1.0.1.0...
+[ 1 of 20] Compiling Data.HeterogeneousEnvironment ( src/Data/HeterogeneousEnvironment.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Data/HeterogeneousEnvironment.o )
+[ 2 of 20] Compiling Heist.Internal.Types.HeistState ( src/Heist/Internal/Types/HeistState.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Internal/Types/HeistState.o )
+[ 3 of 20] Compiling Heist.Common     ( src/Heist/Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Common.o )
+
+src/Heist/Common.hs:348:5: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘enc’: Patterns not matched: X.ISO_8859_1
+[ 4 of 20] Compiling Heist.Compiled.Internal ( src/Heist/Compiled/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Compiled/Internal.o )
+[ 5 of 20] Compiling Heist.Compiled   ( src/Heist/Compiled.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Compiled.o )
+[ 6 of 20] Compiling Heist.Compiled.LowLevel ( src/Heist/Compiled/LowLevel.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Compiled/LowLevel.o )
+[ 7 of 20] Compiling Heist.Interpreted.Internal ( src/Heist/Interpreted/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Interpreted/Internal.o )
+[ 8 of 20] Compiling Heist.Internal.Types ( src/Heist/Internal/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Internal/Types.o )
+[ 9 of 20] Compiling Heist.Interpreted ( src/Heist/Interpreted.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Interpreted.o )
+[10 of 20] Compiling Heist.Splices.Apply ( src/Heist/Splices/Apply.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Apply.o )
+[11 of 20] Compiling Heist.Splices.Bind ( src/Heist/Splices/Bind.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Bind.o )
+[12 of 20] Compiling Heist.Splices.BindStrict ( src/Heist/Splices/BindStrict.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/BindStrict.o )
+[13 of 20] Compiling Heist.Splices.Cache ( src/Heist/Splices/Cache.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Cache.o )
+[14 of 20] Compiling Heist.Splices.Html ( src/Heist/Splices/Html.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Html.o )
+[15 of 20] Compiling Heist.Splices.Ignore ( src/Heist/Splices/Ignore.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Ignore.o )
+[16 of 20] Compiling Heist.Splices.Json ( src/Heist/Splices/Json.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Json.o )
+[17 of 20] Compiling Heist.Splices.Markdown ( src/Heist/Splices/Markdown.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices/Markdown.o )
+[18 of 20] Compiling Heist.Splices    ( src/Heist/Splices.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/Splices.o )
+[19 of 20] Compiling Heist            ( src/Heist.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist.o )
+[20 of 20] Compiling Heist.TemplateDirectory ( src/Heist/TemplateDirectory.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Heist/TemplateDirectory.o )
+Installing library in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/heist-1.0.1.0-6eXLJGduekM3CkxLYT2jg9
+Registering heist-1.0.1.0...

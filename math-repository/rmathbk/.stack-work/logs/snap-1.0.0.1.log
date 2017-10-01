@@ -1,0 +1,33 @@
+Configuring snap-1.0.0.1...
+Building snap-1.0.0.1...
+Preprocessing library snap-1.0.0.1...
+[ 1 of 27] Compiling Snap.Snaplet.Session.SessionManager ( src/Snap/Snaplet/Session/SessionManager.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Session/SessionManager.o )
+[ 2 of 27] Compiling Snap.Snaplet.Session.SecureCookie ( src/Snap/Snaplet/Session/SecureCookie.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Session/SecureCookie.o )
+[ 3 of 27] Compiling Snap.Snaplet.Session.Common ( src/Snap/Snaplet/Session/Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Session/Common.o )
+[ 4 of 27] Compiling Snap.Snaplet.Internal.RST ( src/Snap/Snaplet/Internal/RST.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Internal/RST.o )
+[ 5 of 27] Compiling Snap.Snaplet.Internal.Lensed ( src/Snap/Snaplet/Internal/Lensed.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Internal/Lensed.o )
+[ 6 of 27] Compiling Snap.Snaplet.Internal.LensT ( src/Snap/Snaplet/Internal/LensT.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Internal/LensT.o )
+[ 7 of 27] Compiling Snap.Snaplet.Internal.Types ( src/Snap/Snaplet/Internal/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Internal/Types.o )
+[ 8 of 27] Compiling Snap.Snaplet.Config ( src/Snap/Snaplet/Config.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Config.o )
+[ 9 of 27] Compiling Snap.Snaplet.Internal.Initializer ( src/Snap/Snaplet/Internal/Initializer.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Internal/Initializer.o )
+[10 of 27] Compiling Snap.Snaplet     ( src/Snap/Snaplet.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet.o )
+[11 of 27] Compiling Snap.Snaplet.Auth.Types ( src/Snap/Snaplet/Auth/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth/Types.o )
+[12 of 27] Compiling Snap.Snaplet.Heist.Internal ( src/Snap/Snaplet/Heist/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Heist/Internal.o )
+[13 of 27] Compiling Snap.Snaplet.HeistNoClass ( src/Snap/Snaplet/HeistNoClass.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/HeistNoClass.o )
+[14 of 27] Compiling Snap.Snaplet.Heist ( src/Snap/Snaplet/Heist.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Heist.o )
+[15 of 27] Compiling Snap.Snaplet.Heist.Generic ( src/Snap/Snaplet/Heist/Generic.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Heist/Generic.o )
+[16 of 27] Compiling Snap.Snaplet.Heist.Interpreted ( src/Snap/Snaplet/Heist/Interpreted.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Heist/Interpreted.o )
+[17 of 27] Compiling Snap.Snaplet.Heist.Compiled ( src/Snap/Snaplet/Heist/Compiled.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Heist/Compiled.o )
+[18 of 27] Compiling Snap.Snaplet.Session ( src/Snap/Snaplet/Session.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Session.o )
+[19 of 27] Compiling Snap.Snaplet.Auth.AuthManager ( src/Snap/Snaplet/Auth/AuthManager.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth/AuthManager.o )
+[20 of 27] Compiling Snap.Snaplet.Auth.Backends.JsonFile ( src/Snap/Snaplet/Auth/Backends/JsonFile.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth/Backends/JsonFile.o )
+[21 of 27] Compiling Snap.Snaplet.Auth.Handlers ( src/Snap/Snaplet/Auth/Handlers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth/Handlers.o )
+[22 of 27] Compiling Snap.Snaplet.Auth.SpliceHelpers ( src/Snap/Snaplet/Auth/SpliceHelpers.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth/SpliceHelpers.o )
+[23 of 27] Compiling Snap.Snaplet.Auth ( src/Snap/Snaplet/Auth.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Auth.o )
+[24 of 27] Compiling Snap.Snaplet.Session.Backends.CookieSession ( src/Snap/Snaplet/Session/Backends/CookieSession.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Session/Backends/CookieSession.o )
+[25 of 27] Compiling Snap.Snaplet.Test ( src/Snap/Snaplet/Test.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Snaplet/Test.o )
+[26 of 27] Compiling Snap             ( src/Snap.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap.o )
+[27 of 27] Compiling Paths_snap       ( .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/Paths_snap.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Paths_snap.o )
+Installing library in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/snap-1.0.0.1-7j6sEdK9VNpCKHJiQ5IRGM
+Registering snap-1.0.0.1...

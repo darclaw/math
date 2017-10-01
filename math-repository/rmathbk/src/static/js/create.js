@@ -202,3 +202,75 @@ cy.on('tap', 'node', function tap1(evt){
       cy.on('tap', 'node', tap1);
    });
 });
+
+$("#data_add").click(function(evt){
+   $("#data_add").after("<div><input type='text' placeholder='key' name='key'><input type='text' name='value_type' placeholder='value type' class='data_type_value'></input><input type='text' placeholder='value' name='value' class='data_add_value'><button class='remove_data_add'>&#10006</button></div>");
+   bind_removing();
+   bind_type_change();
+   function bind_removing(){
+      $(".remove_data_add").click(function(evt){
+         evt.target.parentNode.remove();
+      });
+   }
+   var level = 0;
+   function bind_type_change(){
+      level++;
+      $(".data_type_value").focusout(function(evt){
+         if(evt.target.value != "multi"){
+            $(evt.target).siblings(".data_add_value").prop('type', evt.target.value);
+         } else {
+            //add making multiple entries
+            $(evt.target).siblings(".data_add_value").replaceWith("<div><input type='text' placeholder='"+level+"key' name='key'><input type='text' name='value_type' placeholder='"+level+" value type' class='data_type_value'></input><input type='text' placeholder='"+level+" value' name='value' class='data_add_value'><button class='remove_data_add'>&#10006</button></div>");
+            bind_type_change();
+            bind_removing();
+         }
+      });
+   }
+});
+
+$("#submit").click(function submit(evt){
+   let data = [];
+   let vals = [];
+   let val_ts = [];
+   let keys = [];
+   $("#info > div").each(function getInfo(index, elm){
+      let inf = {};
+      inf.key        = $(elm).children("[name = 'key']").val();
+      inf.value_type = $(elm).children("[name = 'value_type']").val();
+      inf.value      = $(elm).children("[name = 'value']").val();
+      data.push(inf);
+
+      vals.push(inf.value);
+      val_ts.push(inf.value_type);
+      keys.push(inf.key);
+   });
+   console.log(JSON.stringify(data));
+   
+   let adjMat = [];
+   let nameToNum = {};
+   for(let i=0;i<cy.nodes().length;i++){
+      adjMat[i]=[];
+      for(let i2=0;i2<cy.nodes().length;i2++){
+         adjMat[i][i2]=0;
+      }
+   }
+   cy.nodes().forEach(function popNameToNum(node,i){
+      nameToNum[node.data().id]=i;
+   });
+   console.log("create/submit "+JSON.stringify(nameToNum));
+   cy.nodes().forEach(function getAdjecent(node,i){
+      //adjMat[nameToNum[node.data().id]]=[]; //[node.data().id]={};
+      node.outgoers().forEach(function (anode){
+         console.log("create/submit/getAdjecent "+JSON.stringify(anode.data().target));
+         console.log("create/submit/getAdjecent "+JSON.stringify(adjMat[nameToNum[i]]));
+         //adjMatLet[node.data().id][anode.data().target]=1;
+         if(anode.data().target){
+            adjMat[nameToNum[node.data().id]][nameToNum[anode.data().target]]=1;
+         }
+      });
+   });
+   console.log(JSON.stringify(adjMat));
+
+   $.post("/add/graph", {graph:cy.json(), data:data, ndata:data.length, vals:vals, val_ts:val_ts, keys:keys, adjMat:adjMat, adjMatSize:adjMat.length});
+});
+

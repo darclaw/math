@@ -1,0 +1,259 @@
+Configuring jmacro-0.6.14...
+Building jmacro-0.6.14...
+Preprocessing library jmacro-0.6.14...
+
+Language/Javascript/JMacro/Base.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Language/Javascript/JMacro/QQ.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[1 of 8] Compiling Language.Javascript.JMacro.Types ( Language/Javascript/JMacro/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/Types.o )
+
+Language/Javascript/JMacro/Types.hs:6:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Language/Javascript/JMacro/Types.hs:82:1: warning: [-Wunused-top-binds]
+    Defined but not used: ‘parseConstrainedType’
+[2 of 8] Compiling Language.Javascript.JMacro.ParseTH ( Language/Javascript/JMacro/ParseTH.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/ParseTH.o )
+[3 of 8] Compiling Language.Javascript.JMacro.Base ( Language/Javascript/JMacro/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/Base.o )
+
+Language/Javascript/JMacro/Base.hs:38:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Language/Javascript/JMacro/Base.hs:218:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:223:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:228:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:233:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:584:26: warning: [-Wunused-matches]
+    Defined but not used: ‘cs’
+[4 of 8] Compiling Language.Javascript.JMacro.QQ ( Language/Javascript/JMacro/QQ.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/QQ.o )
+
+Language/Javascript/JMacro/QQ.hs:17:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+Language/Javascript/JMacro/QQ.hs:24:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Language/Javascript/JMacro/QQ.hs:56:10: warning: [-Wmissing-fields]
+    • Fields of ‘QuasiQuoter’ not initialised: quoteType, quoteDec
+    • In the expression:
+        QuasiQuoter {quoteExp = quoteJMExp, quotePat = quoteJMPat}
+      In an equation for ‘jmacro’:
+          jmacro = QuasiQuoter {quoteExp = quoteJMExp, quotePat = quoteJMPat}
+
+Language/Javascript/JMacro/QQ.hs:60:11: warning: [-Wmissing-fields]
+    • Fields of ‘QuasiQuoter’ not initialised: quoteType, quoteDec
+    • In the expression:
+        QuasiQuoter {quoteExp = quoteJMExpE, quotePat = quoteJMPatE}
+      In an equation for ‘jmacroE’:
+          jmacroE
+            = QuasiQuoter {quoteExp = quoteJMExpE, quotePat = quoteJMPatE}
+[5 of 8] Compiling Language.Javascript.JMacro.Prelude ( Language/Javascript/JMacro/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/Prelude.o )
+[6 of 8] Compiling Language.Javascript.JMacro.TypeCheck ( Language/Javascript/JMacro/TypeCheck.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/TypeCheck.o )
+
+Language/Javascript/JMacro/TypeCheck.hs:14:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use Control.Monad.Except instead
+
+Language/Javascript/JMacro/TypeCheck.hs:98:43: warning: [-Wunused-matches]
+    Defined but not used: ‘cxt’
+
+Language/Javascript/JMacro/TypeCheck.hs:108:28: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Language/Javascript/JMacro/TypeCheck.hs:118:36: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Language/Javascript/JMacro/TypeCheck.hs:121:34: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Language/Javascript/JMacro/TypeCheck.hs:173:19: warning: [-Wname-shadowing]
+    This binding for ‘x’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:136:19
+
+Language/Javascript/JMacro/TypeCheck.hs:174:17: warning: [-Wname-shadowing]
+    This binding for ‘go’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:141:7
+
+Language/Javascript/JMacro/TypeCheck.hs:286:23: warning: [-Wunused-matches]
+    Defined but not used: ‘vr’
+
+Language/Javascript/JMacro/TypeCheck.hs:329:28: warning: [-Wunused-matches]
+    Defined but not used: ‘vars’
+
+Language/Javascript/JMacro/TypeCheck.hs:329:33: warning: [-Wname-shadowing]
+    This binding for ‘t’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:326:12
+
+Language/Javascript/JMacro/TypeCheck.hs:329:33: warning: [-Wunused-matches]
+    Defined but not used: ‘t’
+
+Language/Javascript/JMacro/TypeCheck.hs:335:28: warning: [-Wname-shadowing]
+    This binding for ‘t’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:326:12
+
+Language/Javascript/JMacro/TypeCheck.hs:364:28: warning: [-Wunused-matches]
+    Defined but not used: ‘vars’
+
+Language/Javascript/JMacro/TypeCheck.hs:364:33: warning: [-Wname-shadowing]
+    This binding for ‘t’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:361:14
+
+Language/Javascript/JMacro/TypeCheck.hs:364:33: warning: [-Wunused-matches]
+    Defined but not used: ‘t’
+
+Language/Javascript/JMacro/TypeCheck.hs:370:28: warning: [-Wname-shadowing]
+    This binding for ‘t’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:361:14
+
+Language/Javascript/JMacro/TypeCheck.hs:585:13: warning: [-Wname-shadowing]
+    This binding for ‘go’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:547:7
+
+Language/Javascript/JMacro/TypeCheck.hs:594:16: warning: [-Wunused-matches]
+    Defined but not used: ‘i’
+
+Language/Javascript/JMacro/TypeCheck.hs:660:24: warning: [-Wunused-matches]
+    Defined but not used: ‘t’
+
+Language/Javascript/JMacro/TypeCheck.hs:663:1: warning: [-Wmissing-signatures]
+    Top-level binding with no type signature:
+      resolveType :: JType -> TMonad JType
+
+Language/Javascript/JMacro/TypeCheck.hs:664:1: warning: [-Wmissing-signatures]
+    Top-level binding with no type signature:
+      resolveTypeShallow :: JType -> TMonad JType
+
+Language/Javascript/JMacro/TypeCheck.hs:729:22: warning: [-Wunused-matches]
+    Defined but not used: ‘mbName’
+
+Language/Javascript/JMacro/TypeCheck.hs:745:10: warning: [-Wname-shadowing]
+    This binding for ‘t’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:742:22
+
+Language/Javascript/JMacro/TypeCheck.hs:759:39: warning: [-Wname-shadowing]
+    This binding for ‘xt’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:753:6
+
+Language/Javascript/JMacro/TypeCheck.hs:760:39: warning: [-Wname-shadowing]
+    This binding for ‘yt’ shadows the existing binding
+      bound at Language/Javascript/JMacro/TypeCheck.hs:754:6
+
+Language/Javascript/JMacro/TypeCheck.hs:776:11: warning: [-Wunused-matches]
+    Defined but not used: ‘yt’
+
+Language/Javascript/JMacro/TypeCheck.hs:805:57: warning: [-Wunused-matches]
+    Defined but not used: ‘e’
+
+Language/Javascript/JMacro/TypeCheck.hs:830:24: warning: [-Wunused-matches]
+    Defined but not used: ‘t’
+
+Language/Javascript/JMacro/TypeCheck.hs:838:24: warning: [-Wunused-matches]
+    Defined but not used: ‘e’
+
+Language/Javascript/JMacro/TypeCheck.hs:838:26: warning: [-Wunused-matches]
+    Defined but not used: ‘e1’
+
+Language/Javascript/JMacro/TypeCheck.hs:866:24: warning: [-Wunused-matches]
+    Defined but not used: ‘e’
+
+Language/Javascript/JMacro/TypeCheck.hs:932:5: warning: [-Wincomplete-patterns]
+    Pattern match(es) are non-exhaustive
+    In an equation for ‘typecheck’:
+        Patterns not matched:
+            (LabelStat _ _)
+            (ContinueStat _)
+
+Language/Javascript/JMacro/TypeCheck.hs:942:27: warning: [-Wunused-matches]
+    Defined but not used: ‘e’
+
+Language/Javascript/JMacro/TypeCheck.hs:942:29: warning: [-Wunused-matches]
+    Defined but not used: ‘xs’
+
+Language/Javascript/JMacro/TypeCheck.hs:942:32: warning: [-Wunused-matches]
+    Defined but not used: ‘d’
+[7 of 8] Compiling Language.Javascript.JMacro.Util ( Language/Javascript/JMacro/Util.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro/Util.o )
+[8 of 8] Compiling Language.Javascript.JMacro ( Language/Javascript/JMacro.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Language/Javascript/JMacro.o )
+Preprocessing executable 'jmacro' for jmacro-0.6.14...
+
+Language/Javascript/JMacro/QQ.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Language/Javascript/JMacro/Base.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+[1 of 7] Compiling Language.Javascript.JMacro.Types ( Language/Javascript/JMacro/Types.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro/Types.o )
+[2 of 7] Compiling Language.Javascript.JMacro.ParseTH ( Language/Javascript/JMacro/ParseTH.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro/ParseTH.o )
+[3 of 7] Compiling Language.Javascript.JMacro.Base ( Language/Javascript/JMacro/Base.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro/Base.o )
+
+Language/Javascript/JMacro/Base.hs:218:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:223:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:228:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+
+Language/Javascript/JMacro/Base.hs:233:5: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In an equation for ‘jfromGADT’: jfromGADT _ = ...
+[4 of 7] Compiling Language.Javascript.JMacro.QQ ( Language/Javascript/JMacro/QQ.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro/QQ.o )
+
+Language/Javascript/JMacro/QQ.hs:56:10: warning: [-Wmissing-fields]
+    • Fields of ‘QuasiQuoter’ not initialised: quoteType, quoteDec
+    • In the expression:
+        QuasiQuoter {quoteExp = quoteJMExp, quotePat = quoteJMPat}
+      In an equation for ‘jmacro’:
+          jmacro = QuasiQuoter {quoteExp = quoteJMExp, quotePat = quoteJMPat}
+
+Language/Javascript/JMacro/QQ.hs:60:11: warning: [-Wmissing-fields]
+    • Fields of ‘QuasiQuoter’ not initialised: quoteType, quoteDec
+    • In the expression:
+        QuasiQuoter {quoteExp = quoteJMExpE, quotePat = quoteJMPatE}
+      In an equation for ‘jmacroE’:
+          jmacroE
+            = QuasiQuoter {quoteExp = quoteJMExpE, quotePat = quoteJMPatE}
+[5 of 7] Compiling Language.Javascript.JMacro.Prelude ( Language/Javascript/JMacro/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro/Prelude.o )
+[6 of 7] Compiling Language.Javascript.JMacro ( Language/Javascript/JMacro.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Language/Javascript/JMacro.o )
+[7 of 7] Compiling Main             ( Language/Javascript/JMacro/Executable.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro-tmp/Main.o )
+
+Language/Javascript/JMacro/QQ.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+
+Language/Javascript/JMacro/Base.hs:1:55: warning:
+    -XOverlappingInstances is deprecated: instead use per-instance pragmas OVERLAPPING/OVERLAPPABLE/OVERLAPS
+Linking .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/jmacro/jmacro ...
+Installing library in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/jmacro-0.6.14-LHSaONAldLbCyMzMoE1FiQ
+Installing executable(s) in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/bin
+Registering jmacro-0.6.14...

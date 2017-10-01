@@ -1,0 +1,1574 @@
+
+==================== FINAL INTERFACE ====================
+2017-06-02 18:35:16.242912503 UTC
+
+interface main@main:Handlers.AddHandler 8002
+  interface hash: e1ac15d286b3040c2cd02b868d6172d8
+  ABI hash: d37fa4327fbb9f0e59e6df097565ea7c
+  export-list hash: 4b980640a214a7f31dd64e8ec2a7fc89
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5ee9c97f33afc50c453b9978f7a717ef
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Handlers.AddHandler.add
+  Handlers.AddHandler.charPoly
+  Handlers.AddHandler.fullMatPath
+  Handlers.AddHandler.polyToList
+  Handlers.AddHandler.prettyShow
+  Handlers.AddHandler.readB8
+  Handlers.AddHandler.realSimp
+  Handlers.AddHandler.showB8
+  Handlers.AddHandler.simplify
+  Handlers.AddHandler.writeStream
+  Handlers.AddHandler.Poly{Handlers.AddHandler.:*: Handlers.AddHandler.:+: Handlers.AddHandler.:^: Handlers.AddHandler.PConst Handlers.AddHandler.Var}
+module dependencies: AI.Regression AI.Tree
+package dependencies: MonadRandom-0.5.1@MonadRandom-0.5.1-LAK8C9kZP7CGy6fqaQvVH3
+                      aeson-1.0.2.1@aeson-1.0.2.1-jeGf4seO2YIJ2VbcmmRYQ
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-149sKSjRQXt1eo4orvbms1
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-KeJp8zYMpcS9WibvTcxU22
+                      base16-bytestring-0.1.1.6@base16-bytestring-0.1.1.6-4E2p94lTx8gIceMhu8Kl9o
+                      base64-bytestring-1.0.0.1@base64-bytestring-1.0.0.1-4O9TExPPz6eI82Yj7L4SIj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      blaze-builder-0.4.0.2@blaze-builder-0.4.0.2-CHCuxDJaC37LXaq0Zrx3Kf
+                      bson-0.3.2.3@bson-0.3.2.3-IKBrzl5UfYXDxKGPgMjrOo
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      case-insensitive-1.2.0.9@case-insensitive-1.2.0.9-9PPjZSWX26rHTfSEllBMiX
+                      clock-0.7.2@clock-0.7.2-6ZjQ4liQAtMEQ8sxJKD0xY
+                      containers-0.5.7.1@containers-0.5.7.1
+                      cryptohash-0.11.9@cryptohash-0.11.9-8v7dR3opGDmEQyib5nAMaW
+                      cryptonite-0.22@cryptonite-0.22-K61vio5PfBcI0Y8ipTPr4m
+                      data-binary-ieee754-0.4.4@data-binary-ieee754-0.4.4-7iiF2mP1jcB6tVSPgIyBOi
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD
+                      entropy-0.3.7@entropy-0.3.7-GVoReSVE1cZ4Y1pKgzhBYO
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.0@hashable-1.2.6.0-ADsVFnf0mYuIGc33PNm4mR
+                      hashtables-1.2.1.1@hashtables-1.2.1.1-3LJ86DfgMIuL4FoujH7bPj
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.1@integer-logarithms-1.0.1-DnHEvsScT075FQWguSn538
+                      io-streams-1.3.6.1@io-streams-1.3.6.1-4aLOCF1vWjT2jfvW7nMfwa
+                      io-streams-haproxy-1.0.0.1@io-streams-haproxy-1.0.0.1-10yBF4vB6suK0QzAEu7Ife
+                      lifted-base-0.2.3.10@lifted-base-0.2.3.10-ILgqYNMTYzz38p8nUW9oQ6
+                      loop-0.3.0@loop-0.3.0-4tGn4RSY02pFTwJ5L4CYRr
+                      matrix-0.3.5.0@matrix-0.3.5.0-FG14zGHiDqH57xroCBbwGZ
+                      memory-0.14.5@memory-0.14.5-GAnOVy3j9E0DQqPVrrJn9D
+                      monad-control-1.0.1.0@monad-control-1.0.1.0-DfEdyINcb8eLXTmDHmTN7J
+                      mongoDB-2.3.0@mongoDB-2.3.0-63MrWtPUgblG1nBYsitlsR
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+                      nonce-1.0.4@nonce-1.0.4-HnKvec7he3REzeRf2R4HUG
+                      parsec-3.1.11@parsec-3.1.11-KfZohCLhCERHHaWU51ma7a
+                      primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH
+                      process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      random-shuffle-0.0.4@random-shuffle-0.0.4-HRIfjxLvrbiBqCSWMM2ool
+                      readable-0.3.1@readable-0.3.1-7FSnLl6NSCfINHVPwOGo9q
+                      safe-0.3.14@safe-0.3.14-GsbXn9D9F3BDazVNcErzdQ
+                      scientific-0.3.4.12@scientific-0.3.4.12-5Xr2KUfqmy25ULPuLkfrhy
+                      snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB
+                      snap-extras-0.12.0.0@snap-extras-0.12.0.0-1BX03a76bH53yBBc7YwLgN
+                      snap-server-1.0.2.0@snap-server-1.0.2.0-AAdQbtjAzkC7l7OPgJygJO
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-DqTYAPqU3ao5zvndQftjsL
+                      template-haskell-2.11.1.0
+                      text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-3He1TF3rGvT5F5jDQb7kpc
+                      unix-2.7.2.1@unix-2.7.2.1
+                      unix-compat-0.4.3.1@unix-compat-0.4.3.1-4UGk5Lzx1jh6odMZdBsQG0
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-DdtblIYZVYh4wkJ54DqKSm
+                      vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj
+                      zlib-0.6.1.2@zlib-0.6.1.2-BfeUVhBVvrx1Nvtzv6OD9c
+                      zlib-bindings-0.1.1.5@zlib-bindings-0.1.1.5-89JnZByK0a34BXtS4I1nn1
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-149sKSjRQXt1eo4orvbms1:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-149sKSjRQXt1eo4orvbms1:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.0@hashable-1.2.6.0-ADsVFnf0mYuIGc33PNm4mR:Data.Hashable.Generic
+         mongoDB-2.3.0@mongoDB-2.3.0-63MrWtPUgblG1nBYsitlsR:Database.MongoDB.Internal.Util
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+         snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB:Snap.Internal.Instances
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li:Data.Text
+         text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Unboxed
+family instance modules: MonadRandom-0.5.1@MonadRandom-0.5.1-LAK8C9kZP7CGy6fqaQvVH3:Control.Monad.Trans.Random.Lazy
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-149sKSjRQXt1eo4orvbms1:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         clock-0.7.2@clock-0.7.2-6ZjQ4liQAtMEQ8sxJKD0xY:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-6Wnps4GD7EFnRucVzXIFD:Data.DList
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Array.Bitmap
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Array.Boxed
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Array.Unboxed
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Collection.Buildable
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Collection.Collection
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Collection.Element
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Collection.Keyed
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Collection.Mutable
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Numerical.Subtractive
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Primitive.Block.Base
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Primitive.Monad
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Primitive.Types.OffsetSize
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Primitive.UTF8.Base
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.String.Encoding.ASCII7
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.String.Encoding.ISO_8859_1
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.String.Encoding.UTF16
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.String.Encoding.UTF32
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.String.UTF8
+                         foundation-0.0.9@foundation-0.0.9-I7zxbW1fzxxEzhSK40Hvj7:Foundation.Tuple
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         monad-control-1.0.1.0@monad-control-1.0.1.0-DfEdyINcb8eLXTmDHmTN7J:Control.Monad.Trans.Control
+                         primitive-0.6.1.0@primitive-0.6.1.0-6AbSTw9JXz141LE5p6LGH:Control.Monad.Primitive
+                         snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB:Snap.Internal.Core
+                         tagged-0.8.5@tagged-0.8.5-DqTYAPqU3ao5zvndQftjsL:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-FeA6fTH3E2n883cNXIS2Li:Data.Text.Lazy
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-DdtblIYZVYh4wkJ54DqKSm:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-DdtblIYZVYh4wkJ54DqKSm:Data.HashSet
+                         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-KNR9LPrtqAM8g8hxCKOTgj:Data.Vector.Unboxed.Base
+                         zlib-0.6.1.2@zlib-0.6.1.2-BfeUVhBVvrx1Nvtzv6OD9c:Codec.Compression.Zlib.Stream
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Read b6821365d2d5fa2155c9e910160e7f57
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:Text.ParserCombinators.ReadPrec 5a182a8d6deb0f7d67aed5fab08a5cc0
+import  -/  base-4.9.1.0:Text.Read 75c59863e882ebaec4532e9465e2ee9b
+import  -/  base-4.9.1.0:Text.Read.Lex 16199fac3c6c2d64cc7c268f3c0d2269
+import  -/  bson-0.3.2.3@bson-0.3.2.3-IKBrzl5UfYXDxKGPgMjrOo:Data.Bson 51ac0798cb84ee50f69963a8f69a10dd
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Char8 96177e283aa937da818ab1abb69421ca
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 20d4ffbee41965d03d6a989425473dc4
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base a29df8c78ba14cbcd4d90f97bd8d22e9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  AI.Regression b76a6b20c80b6a48d7c58eedd89d7f27
+  exports: e47537f46f7f385a072c5a95b9bd6042
+import  -/  AI.Tree 2e7b9408597e553c71ef36c06ed27283
+  exports: 1f22d7c5525bfe5f85d5f0a0c9460b69
+import  -/  matrix-0.3.5.0@matrix-0.3.5.0-FG14zGHiDqH57xroCBbwGZ:Data.Matrix 4406852e6212aaa45f8a2d254db17b4b
+import  -/  mongoDB-2.3.0@mongoDB-2.3.0-63MrWtPUgblG1nBYsitlsR:Database.MongoDB b1f62cb8cafbc9154c1e7e0ae4935dff
+import  -/  mongoDB-2.3.0@mongoDB-2.3.0-63MrWtPUgblG1nBYsitlsR:Database.MongoDB.Connection c201880b9cdec985f6e3b743eb195d02
+import  -/  mongoDB-2.3.0@mongoDB-2.3.0-63MrWtPUgblG1nBYsitlsR:Database.MongoDB.Query df8d3aa58cd1697875d4c90dee485053
+import  -/  snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB:Snap.Core fab12b624121e49e33325d9ac751277e
+import  -/  snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB:Snap.Internal.Core 017a84b937a7ee914f974505a774d647
+import  -/  snap-core-1.0.2.0@snap-core-1.0.2.0-H9XKASfChKSIKWeal4J4OB:Snap.Util.FileServe 8d79a4126ec75d9ecafbad39ad2bafe0
+import  -/  snap-extras-0.12.0.0@snap-extras-0.12.0.0-1BX03a76bH53yBBc7YwLgN:Snap.Extras.JSON 31574acbfa08b6391649627959ad2e3e
+import  -/  snap-server-1.0.2.0@snap-server-1.0.2.0-AAdQbtjAzkC7l7OPgJygJO:Snap.Http.Server 67cabbc1e07e0a5dfd741d60ea2cf1a9
+790dffb360dc2ecff859543430ada03e
+  $fEqPoly ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    GHC.Classes.Eq (Handlers.AddHandler.Poly a b)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dEq :: GHC.Classes.Eq a)
+                      ($dEq1 :: GHC.Classes.Eq b).
+                  @ (Handlers.AddHandler.Poly a b)
+                  (Handlers.AddHandler.$fEqPoly_$c== @ a @ b $dEq $dEq1)
+                  (Handlers.AddHandler.$fEqPoly_$c/= @ a @ b $dEq $dEq1) -}
+790dffb360dc2ecff859543430ada03e
+  $fEqPoly_$c/= ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Handlers.AddHandler.Poly a b
+    -> Handlers.AddHandler.Poly a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><S,1*U><S,1*U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dEq1 :: GHC.Classes.Eq b)
+                   (a1 :: Handlers.AddHandler.Poly a b)
+                   (b1 :: Handlers.AddHandler.Poly a b) ->
+                 case Handlers.AddHandler.$fEqPoly_$c==
+                        @ a
+                        @ b
+                        $dEq
+                        $dEq1
+                        a1
+                        b1 of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+790dffb360dc2ecff859543430ada03e
+  $fEqPoly_$c== ::
+    (GHC.Classes.Eq a, GHC.Classes.Eq b) =>
+    Handlers.AddHandler.Poly a b
+    -> Handlers.AddHandler.Poly a b -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><S,1*U><S,1*U> -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly ::
+    GHC.Num.Num a => GHC.Num.Num (Handlers.AddHandler.Poly a b)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(A,A,A,C(U),A,A,C(U))>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a @ b ($dNum :: GHC.Num.Num a).
+                  @ (Handlers.AddHandler.Poly a b)
+                  (Handlers.AddHandler.$fNumPoly_$c+ @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$c- @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$c* @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$cnegate @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$cabs @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$csignum @ a @ b $dNum)
+                  (Handlers.AddHandler.$fNumPoly_$cfromInteger @ a @ b $dNum) -}
+fefcfcb677b737c4966409a3dbc591e7
+  $fNumPoly1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$c* ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b
+    -> Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: Handlers.AddHandler.Poly a b)
+                   (eta1 :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.:*: @ a @ b eta eta1) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$c+ ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b
+    -> Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (eta :: Handlers.AddHandler.Poly a b)
+                   (eta1 :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.:+: @ a @ b eta eta1) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$c- ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b
+    -> Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,C(U),A,A,C(U))><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (x :: Handlers.AddHandler.Poly a b)
+                   (y :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.$fNumPoly_$c+
+                   @ a
+                   @ b
+                   $dNum
+                   x
+                   (Handlers.AddHandler.$fNumPoly_$cnegate @ a @ b $dNum y)) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$cabs ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (x :: Handlers.AddHandler.Poly a b) ->
+                 x) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$cfromInteger ::
+    GHC.Num.Num a =>
+    GHC.Integer.Type.Integer -> Handlers.AddHandler.Poly a b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))><L,U>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (x :: GHC.Integer.Type.Integer) ->
+                 Handlers.AddHandler.PConst
+                   @ a
+                   @ b
+                   (GHC.Num.fromInteger @ a $dNum x)) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$cnegate ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,1*C1(U),A,A,1*C1(U))><L,U>m3,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (x :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.:*:
+                   @ a
+                   @ b
+                   (Handlers.AddHandler.PConst
+                      @ a
+                      @ b
+                      (GHC.Num.negate
+                         @ a
+                         $dNum
+                         (GHC.Num.fromInteger @ a $dNum Handlers.AddHandler.$fNumPoly1)))
+                   x) -}
+790dffb360dc2ecff859543430ada03e
+  $fNumPoly_$csignum ::
+    GHC.Num.Num a =>
+    Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))><L,A>m2,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dNum :: GHC.Num.Num a)
+                   (x :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.PConst
+                   @ a
+                   @ b
+                   (GHC.Num.fromInteger @ a $dNum Handlers.AddHandler.$fNumPoly1)) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    GHC.Read.Read (Handlers.AddHandler.Poly a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dRead :: GHC.Read.Read a)
+                      ($dRead1 :: GHC.Read.Read b).
+                  @ (Handlers.AddHandler.Poly a b)
+                  (Handlers.AddHandler.$fReadPoly_$creadsPrec @ a @ b $dRead $dRead1)
+                  (Handlers.AddHandler.$fReadPoly_$creadList @ a @ b $dRead $dRead1)
+                  (Handlers.AddHandler.$fReadPoly_$creadPrec @ a @ b $dRead $dRead1)
+                  (Handlers.AddHandler.$fReadPoly_$creadListPrec
+                     @ a
+                     @ b
+                     $dRead
+                     $dRead1) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly1 ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b1.
+       ([Handlers.AddHandler.Poly a b]
+        -> Text.ParserCombinators.ReadP.P b1)
+       -> Text.ParserCombinators.ReadP.P b1
+  {- Arity: 4, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dRead :: GHC.Read.Read a)
+                   ($dRead1 :: GHC.Read.Read b)
+                   (eta :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b1
+                   (eta1 :: [Handlers.AddHandler.Poly a b]
+                            -> Text.ParserCombinators.ReadP.P b1) ->
+                 GHC.Read.list1
+                   @ (Handlers.AddHandler.Poly a b)
+                   (Handlers.AddHandler.$fReadPoly2 @ a @ b $dRead $dRead1)
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <Handlers.AddHandler.Poly a b>_R))
+                   eta
+                   @ b1
+                   eta1) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly2 ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP
+         (Handlers.AddHandler.Poly a b)
+  {- Arity: 3, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)><L,U> -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly_$creadList ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    Text.ParserCombinators.ReadP.ReadS [Handlers.AddHandler.Poly a b]
+  {- Arity: 2, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ b
+                   ($dRead :: GHC.Read.Read a)
+                   ($dRead1 :: GHC.Read.Read b) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ [Handlers.AddHandler.Poly a b]
+                   (GHC.Read.list1
+                      @ (Handlers.AddHandler.Poly a b)
+                      (Handlers.AddHandler.$fReadPoly2 @ a @ b $dRead $dRead1)
+                        `cast`
+                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                <Handlers.AddHandler.Poly a b>_R))
+                      GHC.Read.$fRead()5
+                      @ [Handlers.AddHandler.Poly a b]
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ [Handlers.AddHandler.Poly a b]))) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly_$creadListPrec ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    Text.ParserCombinators.ReadPrec.ReadPrec
+      [Handlers.AddHandler.Poly a b]
+  {- Arity: 4, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.AddHandler.$fReadPoly1
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <GHC.Read.Read a>_R
+                 ->_R <GHC.Read.Read b>_R
+                 ->_R Trans
+                          (<Text.ParserCombinators.ReadPrec.Prec>_R
+                           ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                         <[Handlers.AddHandler.Poly a b]>_R))
+                          (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                    <[Handlers.AddHandler.Poly a b]>_R))) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly_$creadPrec ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    Text.ParserCombinators.ReadPrec.ReadPrec
+      (Handlers.AddHandler.Poly a b)
+  {- Arity: 3, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.AddHandler.$fReadPoly2
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <GHC.Read.Read a>_R
+                 ->_R <GHC.Read.Read b>_R
+                 ->_R Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                               <Handlers.AddHandler.Poly a b>_R)) -}
+790dffb360dc2ecff859543430ada03e
+  $fReadPoly_$creadsPrec ::
+    (GHC.Read.Read a, GHC.Read.Read b) =>
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS
+         (Handlers.AddHandler.Poly a b)
+  {- Arity: 3, Strictness: <L,U(A,A,U,A)><L,U(A,A,U,A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dRead :: GHC.Read.Read a)
+                   ($dRead1 :: GHC.Read.Read b)
+                   (eta :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ (Handlers.AddHandler.Poly a b)
+                   ((Handlers.AddHandler.$fReadPoly2 @ a @ b $dRead $dRead1 eta)
+                      `cast`
+                    (Text.ParserCombinators.ReadP.N:ReadP[0]
+                         <Handlers.AddHandler.Poly a b>_R)
+                      @ (Handlers.AddHandler.Poly a b)
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ (Handlers.AddHandler.Poly a b)))) -}
+790dffb360dc2ecff859543430ada03e
+  $fShowPoly ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Show.Show (Handlers.AddHandler.Poly a b)
+  DFunId
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ a
+                      @ b
+                      ($dShow :: GHC.Show.Show a)
+                      ($dShow1 :: GHC.Show.Show b).
+                  @ (Handlers.AddHandler.Poly a b)
+                  (Handlers.AddHandler.$fShowPoly_$cshowsPrec @ a @ b $dShow $dShow1)
+                  (Handlers.AddHandler.$fShowPoly_$cshow @ a @ b $dShow $dShow1)
+                  (Handlers.AddHandler.$fShowPoly_$cshowList
+                     @ a
+                     @ b
+                     $dShow
+                     $dShow1) -}
+e26980899c34e00d031c9f85171bd67c
+  $fShowPoly1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+790dffb360dc2ecff859543430ada03e
+  $fShowPoly_$cshow ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    Handlers.AddHandler.Poly a b -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show b)
+                   (x :: Handlers.AddHandler.Poly a b) ->
+                 Handlers.AddHandler.$fShowPoly_$cshowsPrec
+                   @ a
+                   @ b
+                   $dShow
+                   $dShow1
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+790dffb360dc2ecff859543430ada03e
+  $fShowPoly_$cshowList ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    [Handlers.AddHandler.Poly a b] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   ($dShow :: GHC.Show.Show a)
+                   ($dShow1 :: GHC.Show.Show b)
+                   (eta :: [Handlers.AddHandler.Poly a b])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Handlers.AddHandler.Poly a b)
+                   (Handlers.AddHandler.$fShowPoly_$cshowsPrec
+                      @ a
+                      @ b
+                      $dShow
+                      $dShow1
+                      Handlers.AddHandler.$fShowPoly1)
+                   eta
+                   eta1) -}
+790dffb360dc2ecff859543430ada03e
+  $fShowPoly_$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Types.Int -> Handlers.AddHandler.Poly a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S(S),1*U(U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   @ b
+                   (w :: GHC.Show.Show a)
+                   (w1 :: GHC.Show.Show b)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: Handlers.AddHandler.Poly a b) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 Handlers.AddHandler.$w$cshowsPrec @ a @ b w w1 ww1 w3 }) -}
+774c006d4cb2f63cd7f8f9e588407c36
+  $tc':*: :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7015822520233447737##
+                   4540281746899454163##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tc':*:1) -}
+5cb929b8dd04c79153480fcf8061c4dd
+  $tc':*:1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "':*:"#) -}
+7fa5dbb51d851fc09e1bf2e4d1fbbe49
+  $tc':+: :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10309194761706775361##
+                   11521604215932260156##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tc':+:1) -}
+e3de9a011f3b763f0be9a292d12af2de
+  $tc':+:1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "':+:"#) -}
+33d832e2199cb51f2268e9ce36dbd3eb
+  $tc':^: :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10896082998192751559##
+                   826085604653141278##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tc':^:1) -}
+7ee7c10eb1009b0575b7f17259f7310a
+  $tc':^:1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "':^:"#) -}
+a2e83c997847c7bf141727e2f62c5128
+  $tc'PConst :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16181943181014187014##
+                   2117850376279602990##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tc'PConst1) -}
+105d9a7024e310adbd2529da03010a0d
+  $tc'PConst1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'PConst"#) -}
+d2428f13eccb836325da47f9ff99b45e
+  $tc'Var :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8060284480790987649##
+                   12809065406584627976##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tc'Var1) -}
+613de0c5ff1ab978e700e5b223f180f8
+  $tc'Var1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Var"#) -}
+4711a3ee679b6226b441fdc004e2fdee
+  $tcPoly :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17175547433732239351##
+                   10416187458628020868##
+                   Handlers.AddHandler.$trModule
+                   Handlers.AddHandler.$tcPoly1) -}
+4deaec3bb4624f7eb4772bb5deec5b65
+  $tcPoly1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Poly"#) -}
+61d1865eddcaa7fdf171ca4a16d78db6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Handlers.AddHandler.$trModule2
+                   Handlers.AddHandler.$trModule1) -}
+e7f2ee8b2a2ff671b6e21bf1da4ea7e0
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Handlers.AddHandler"#) -}
+279d831ec65b2b978010fe3f7530818c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+790dffb360dc2ecff859543430ada03e
+  $w$cshowsPrec ::
+    (GHC.Show.Show a, GHC.Show.Show b) =>
+    GHC.Prim.Int# -> Handlers.AddHandler.Poly a b -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(U)),A,A)><S,U><S,1*U>,
+     Inline: [0] -}
+6d421fd6df22055276c4c4247e4244f6
+  $wfullMatPath ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector GHC.Integer.Type.Integer
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#,
+          GHC.Prim.Int#, Data.Vector.Vector GHC.Integer.Type.Integer #)
+  {- Arity: 7,
+     Strictness: <S,1*U><S,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0] -}
+66888f69861b1bf91b58f131868c7332
+  $wfullMatPath1 ::
+    (GHC.Classes.Eq a1, GHC.Num.Num a, GHC.Num.Num a1,
+     GHC.Classes.Ord a) =>
+    a1
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Vector.Vector a
+    -> (# GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#, GHC.Prim.Int#,
+          GHC.Prim.Int#, Data.Vector.Vector a #)
+  {- Arity: 11,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U(U,U,C(C1(U)),A,A,A,C(U))><L,U(A,C(C1(U)),A,A,A,A,C(U))><L,U(A,A,A,A,C(C1(U)),A,A,A)><L,U><S,U><L,U><L,U><L,U><L,U><L,U(U,U,U)>,
+     Inline: [0] -}
+d6d242a19f6a8a6f8882b2d2c908ceb6
+  $wpoly_go10 ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Data.Map.Base.Map Data.ByteString.Internal.ByteString a
+    -> GHC.Base.Maybe a
+  {- Arity: 5, HasNoCafRefs, Strictness: <L,U><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+790dffb360dc2ecff859543430ada03e
+  data Poly a b
+    = Var b
+    | PConst a
+    | (Handlers.AddHandler.Poly a b) :*: (Handlers.AddHandler.Poly a b)
+    | (Handlers.AddHandler.Poly a b) :+: (Handlers.AddHandler.Poly a b)
+    | (Handlers.AddHandler.Poly a b) :^: a
+60bd476c145f28abdb4ec8e68d1e187b
+  add :: Snap.Internal.Core.Snap ()
+  {- Arity: 3, Strictness: <L,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Handlers.AddHandler.add1
+                  `cast`
+                (Sym (Snap.Internal.Core.N:Snap[0] <()>_R)) -}
+b8ffab0ba4606cd2d345b348a449aca7
+  add1 ::
+    (() -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+    -> (Snap.Internal.Core.Zero
+        -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+    -> Snap.Internal.Core.SnapState
+    -> GHC.Types.IO r
+  {- Arity: 3, Strictness: <L,U><L,U><L,U> -}
+e17d0ec951ad03fed5908210b2a49ccb
+  charPoly ::
+    (Data.String.IsString b, GHC.Num.Num a) =>
+    Data.Matrix.Matrix (Handlers.AddHandler.Poly a b)
+    -> Handlers.AddHandler.Poly a b
+  {- Arity: 2, Strictness: <L,1*C1(U)><L,U(A,A,A,C(U),A,A,C(U))>,
+     Unfolding: (\ @ b
+                   @ a
+                   ($dIsString :: Data.String.IsString b)
+                   ($dNum :: GHC.Num.Num a) ->
+                 let {
+                   lvl107 :: b
+                   = $dIsString `cast` (Data.String.N:IsString[0] <b>_N)
+                       Handlers.AddHandler.charPoly1
+                 } in
+                 let {
+                   lvl108 :: Handlers.AddHandler.Poly a b
+                   = Handlers.AddHandler.Var @ a @ b lvl107
+                 } in
+                 let {
+                   $dNum1 :: GHC.Num.Num (Handlers.AddHandler.Poly a b)
+                   = Handlers.AddHandler.$fNumPoly @ a @ b $dNum
+                 } in
+                 let {
+                   lvl109 :: Handlers.AddHandler.Poly a b
+                             -> Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+                     {- Arity: 2 -}
+                   = Handlers.AddHandler.$fNumPoly_$c- @ a @ b $dNum
+                 } in
+                 \ (m :: Data.Matrix.Matrix (Handlers.AddHandler.Poly a b)) ->
+                 case m of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Data.Matrix.$welementwise
+                        @ (Handlers.AddHandler.Poly a b)
+                        @ (Handlers.AddHandler.Poly a b)
+                        @ (Handlers.AddHandler.Poly a b)
+                        lvl109
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        (case Data.Matrix.$widentity
+                                @ (Handlers.AddHandler.Poly a b)
+                                $dNum1
+                                ww1 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                         Data.Matrix.M
+                           @ (Handlers.AddHandler.Poly a b)
+                           ww8
+                           ww9
+                           ww10
+                           ww11
+                           ww12
+                           (case ww13 of v2 { Data.Vector.Vector ipv ipv1 ipv2 ->
+                            case GHC.Magic.runRW#
+                                   @ 'GHC.Types.PtrRepLifted
+                                   @ (Data.Vector.Vector (Handlers.AddHandler.Poly a b))
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case GHC.Prim.newArray#
+                                           @ (Handlers.AddHandler.Poly a b)
+                                           @ (Control.Monad.Primitive.PrimState
+                                                (GHC.ST.ST GHC.Prim.RealWorld))
+                                           ipv1
+                                           (Data.Vector.Mutable.uninitialised
+                                              @ (Handlers.AddHandler.Poly a b))
+                                           s1
+                                             `cast`
+                                           (GHC.Prim.State#
+                                              (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                        <GHC.Prim.RealWorld>_N)))_R of ds1 { (#,#) ipv3 ipv4 ->
+                                    letrec {
+                                      $s$wfoldlM'_loop :: GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> GHC.Prim.Int#
+                                                          -> GHC.Prim.Int#
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Types.Int #)
+                                        {- Arity: 3, Strictness: <S,U><S,U><L,U> -}
+                                      = \ (sc :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot]
+                                          (sc1 :: GHC.Prim.Int#)
+                                          (sc2 :: GHC.Prim.Int#) ->
+                                        case GHC.Prim.tagToEnum#
+                                               @ GHC.Types.Bool
+                                               (GHC.Prim.>=# sc1 ipv1) of wild {
+                                          GHC.Types.False
+                                          -> case GHC.Prim.indexArray#
+                                                    @ (Handlers.AddHandler.Poly a b)
+                                                    ipv2
+                                                    (GHC.Prim.+# ipv sc1) of ds2 { Unit# ipv5 ->
+                                             case GHC.Prim.writeArray#
+                                                    @ (Control.Monad.Primitive.PrimState
+                                                         (GHC.ST.ST GHC.Prim.RealWorld))
+                                                    @ (Handlers.AddHandler.Poly a b)
+                                                    ipv4
+                                                    sc2
+                                                    (Handlers.AddHandler.:*: @ a @ b lvl108 ipv5)
+                                                    sc
+                                                      `cast`
+                                                    (GHC.Prim.State#
+                                                       (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                                 <GHC.Prim.RealWorld>_N)))_R of s'# { DEFAULT ->
+                                             $s$wfoldlM'_loop
+                                               s'#
+                                                 `cast`
+                                               (GHC.Prim.State#
+                                                  (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                       <GHC.Prim.RealWorld>_N))_R
+                                               (GHC.Prim.+# sc1 1#)
+                                               (GHC.Prim.+# sc2 1#) } }
+                                          GHC.Types.True -> (# sc, GHC.Types.I# sc2 #) }
+                                    } in
+                                    case $s$wfoldlM'_loop
+                                           ipv3
+                                             `cast`
+                                           (GHC.Prim.State#
+                                              (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                   <GHC.Prim.RealWorld>_N))_R
+                                           0#
+                                           0# of ds2 { (#,#) ipv6 ipv7 ->
+                                    case ipv7 of dt5 { GHC.Types.I# dt6 ->
+                                    case GHC.Prim.unsafeFreezeArray#
+                                           @ (Control.Monad.Primitive.PrimState
+                                                (GHC.ST.ST GHC.Prim.RealWorld))
+                                           @ (Handlers.AddHandler.Poly a b)
+                                           ipv4
+                                           ipv6
+                                             `cast`
+                                           (GHC.Prim.State#
+                                              (Sym (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                                        <GHC.Prim.RealWorld>_N)))_R of ds4 { (#,#) ipv5 ipv9 ->
+                                    (# ipv5
+                                         `cast`
+                                       (GHC.Prim.State#
+                                          (Control.Monad.Primitive.D:R:PrimStateST[0]
+                                               <GHC.Prim.RealWorld>_N))_R,
+                                       Data.Vector.Vector
+                                         @ (Handlers.AddHandler.Poly a b)
+                                         0#
+                                         dt6
+                                         ipv9 #) } } } }) of ds1 { (#,#) ipv3 ipv4 ->
+                            ipv4 } }) }) of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.$wdetLaplace
+                   @ (Handlers.AddHandler.Poly a b)
+                   $dNum1
+                   ww8
+                   ww9
+                   ww10
+                   ww11
+                   ww12
+                   ww13 } }) -}
+578d8ba7ef4e659f2a1c603dcbff787f
+  charPoly1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "x"#) -}
+3a33f2796e94a88890999a7334984d19
+  fullMatPath ::
+    (GHC.Classes.Eq a1, GHC.Num.Num a, GHC.Num.Num a1,
+     GHC.Classes.Ord a) =>
+    a1 -> Data.Matrix.Matrix a -> Data.Matrix.Matrix a
+  {- Arity: 6,
+     Strictness: <S(C(C(S))L),U(C(C1(U)),A)><L,U(U,U,C(C1(U)),A,A,A,C(U))><L,U(A,C(C1(U)),A,A,A,A,C(U))><L,U(A,A,A,A,C(C1(U)),A,A,A)><L,U><S(SLLLLL),U(U,U,U,U,U,U(U,U,U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a
+                   @ a1
+                   (w :: GHC.Classes.Eq a1)
+                   (w1 :: GHC.Num.Num a)
+                   (w2 :: GHC.Num.Num a1)
+                   (w3 :: GHC.Classes.Ord a)
+                   (w4 :: a1)
+                   (w5 :: Data.Matrix.Matrix a) ->
+                 case w5 of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case Handlers.AddHandler.$wfullMatPath1
+                        @ a
+                        @ a1
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6 of ww7 { (#,,,,,#) ww8 ww9 ww10 ww11 ww12 ww13 ->
+                 Data.Matrix.M @ a ww8 ww9 ww10 ww11 ww12 ww13 } }) -}
+7162f99fb20f461bbfa6655cc0878db6
+  polyToList ::
+    GHC.Num.Num t =>
+    Handlers.AddHandler.Poly t b -> [(Handlers.AddHandler.Poly t b, t)]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><S,1*U>,
+     Unfolding: (\ @ b
+                   @ t
+                   ($dNum :: GHC.Num.Num t)
+                   (eta :: Handlers.AddHandler.Poly t b) ->
+                 let {
+                   lvl107 :: t
+                   = GHC.Num.fromInteger @ t $dNum Handlers.AddHandler.$fNumPoly1
+                 } in
+                 let {
+                   lvl108 :: t
+                   = GHC.Num.fromInteger @ t $dNum Handlers.AddHandler.polyToList2
+                 } in
+                 let {
+                   lvl109 :: t
+                   = GHC.Num.fromInteger @ t $dNum Handlers.AddHandler.polyToList1
+                 } in
+                 letrec {
+                   polyToList3 :: Handlers.AddHandler.Poly t b
+                                  -> [(Handlers.AddHandler.Poly t b, t)]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: Handlers.AddHandler.Poly t b) ->
+                     case ds of wild {
+                       Handlers.AddHandler.Var b1
+                       -> GHC.Types.:
+                            @ (Handlers.AddHandler.Poly t b, t)
+                            (wild, lvl107)
+                            (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t))
+                       Handlers.AddHandler.PConst a
+                       -> GHC.Types.:
+                            @ (Handlers.AddHandler.Poly t b, t)
+                            (wild, lvl109)
+                            (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t))
+                       Handlers.AddHandler.:*: ds1 ds2
+                       -> case ds1 of wild1 {
+                            DEFAULT
+                            -> GHC.Types.:
+                                 @ (Handlers.AddHandler.Poly t b, t)
+                                 (wild, lvl108)
+                                 (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t))
+                            Handlers.AddHandler.PConst a
+                            -> case ds2 of wild2 {
+                                 DEFAULT
+                                 -> GHC.Types.:
+                                      @ (Handlers.AddHandler.Poly t b, t)
+                                      (wild, lvl108)
+                                      (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t))
+                                 Handlers.AddHandler.Var b1
+                                 -> GHC.Types.:
+                                      @ (Handlers.AddHandler.Poly t b, t)
+                                      (wild, lvl107)
+                                      (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t)) } }
+                       Handlers.AddHandler.:+: ds1 x
+                       -> case ds1 of wild1 {
+                            DEFAULT
+                            -> GHC.Base.++
+                                 @ (Handlers.AddHandler.Poly t b, t)
+                                 (polyToList3 wild1)
+                                 (polyToList3 x)
+                            Handlers.AddHandler.:^: ds2 c
+                            -> case ds2 of wild2 {
+                                 DEFAULT
+                                 -> GHC.Types.:
+                                      @ (Handlers.AddHandler.Poly t b, t)
+                                      (wild1, c)
+                                      (polyToList3 x)
+                                 Handlers.AddHandler.:*: ds3 b1
+                                 -> case ds3 of wild3 { DEFAULT ->
+                                    GHC.Types.:
+                                      @ (Handlers.AddHandler.Poly t b, t)
+                                      (wild1, c)
+                                      (polyToList3 x) } } }
+                       Handlers.AddHandler.:^: ipv ipv1
+                       -> GHC.Types.:
+                            @ (Handlers.AddHandler.Poly t b, t)
+                            (wild, lvl108)
+                            (GHC.Types.[] @ (Handlers.AddHandler.Poly t b, t)) }
+                 } in
+                 polyToList3 eta) -}
+0a4e3ea617a879524542835782f1eaa8
+  polyToList1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+a64171804a7382c60418ef6f31127b0f
+  polyToList2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-1) -}
+34a9b0d0ff0cfc12944c3b98c24b2fb0
+  prettyShow ::
+    (GHC.Show.Show a1, GHC.Show.Show a) =>
+    Handlers.AddHandler.Poly a1 a -> [GHC.Types.Char]
+  {- Arity: 3, Strictness: <L,U(A,C(U),A)><L,U(A,C(U),A)><S,1*U>,
+     Unfolding: (\ @ a
+                   @ a1
+                   ($dShow :: GHC.Show.Show a1)
+                   ($dShow1 :: GHC.Show.Show a)
+                   (eta :: Handlers.AddHandler.Poly a1 a) ->
+                 letrec {
+                   prettyShow2 :: Handlers.AddHandler.Poly a1 a -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: Handlers.AddHandler.Poly a1 a) ->
+                     case ds of wild {
+                       Handlers.AddHandler.Var b -> GHC.Show.show @ a $dShow1 b
+                       Handlers.AddHandler.PConst a2 -> GHC.Show.show @ a1 $dShow a2
+                       Handlers.AddHandler.:*: a2 b
+                       -> GHC.CString.unpackAppendCString#
+                            "("#
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               (prettyShow2 a2)
+                               (GHC.CString.unpackAppendCString#
+                                  "*"#
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     (prettyShow2 b)
+                                     Handlers.AddHandler.prettyShow1)))
+                       Handlers.AddHandler.:+: a2 b
+                       -> GHC.CString.unpackAppendCString#
+                            "("#
+                            (GHC.Base.++
+                               @ GHC.Types.Char
+                               (prettyShow2 a2)
+                               (GHC.CString.unpackAppendCString#
+                                  "+"#
+                                  (GHC.Base.++
+                                     @ GHC.Types.Char
+                                     (prettyShow2 b)
+                                     Handlers.AddHandler.prettyShow1)))
+                       Handlers.AddHandler.:^: a2 b
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            (prettyShow2 a2)
+                            (GHC.CString.unpackAppendCString#
+                               "^"#
+                               (GHC.Show.show @ a1 $dShow b)) }
+                 } in
+                 prettyShow2 eta) -}
+aeaad147c1f4f280334c6334a1579f26
+  prettyShow1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ")"#) -}
+1947bfa57d92ef87f4fac58251fa972e
+  readB1 :: GHC.Integer.Type.Integer
+  {- Strictness: x -}
+231c53a337bfdbbb2e1786d44d83e403
+  readB2 :: GHC.Integer.Type.Integer
+  {- Strictness: x -}
+9649828af8a6594ffa8eddf5e6038172
+  readB3 :: Text.ParserCombinators.ReadP.P GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.Read.$fReadInteger3
+                   GHC.Read.$fReadInteger_$sconvertInt
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Integer.Type.Integer
+                   (Text.Read.readEither5 @ GHC.Integer.Type.Integer)) -}
+fb9790d3e5f08d749f0e22aea2b10f7a
+  readB4 :: GHC.Types.Int
+  {- Strictness: x -}
+6622480a300545999ee87983d761a4cc
+  readB5 :: GHC.Types.Int
+  {- Strictness: x -}
+a82270dba5975719603b8f3a43a16d32
+  readB6 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: (GHC.Read.$fReadInt3
+                   GHC.Read.$fReadInt_$sconvertInt
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Types.Int
+                   (Text.Read.readEither5 @ GHC.Types.Int)) -}
+70d86acf62b0db35dd7ce238f2d3b77d
+  readB8 ::
+    GHC.Read.Read a => Data.ByteString.Internal.ByteString -> a
+  {- Arity: 2,
+     Strictness: <S(LLC(C(S))L),1*U(A,A,1*C1(C1(U)),A)><L,1*U(U,U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   ($dRead :: GHC.Read.Read a)
+                   (x :: Data.ByteString.Internal.ByteString) ->
+                 case Text.Read.readEither
+                        @ a
+                        $dRead
+                        (Data.ByteString.Internal.unpackChars x) of wild {
+                   Data.Either.Left x1
+                   -> GHC.Err.errorWithoutStackTrace @ 'GHC.Types.PtrRepLifted @ a x1
+                   Data.Either.Right y -> y }) -}
+f5fac3150dbaba5102d08ca3e23c8872
+  readB8_$sreadB1 ::
+    Data.ByteString.Internal.ByteString -> GHC.Types.Int
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U)>,
+     Unfolding: (\ (x :: Data.ByteString.Internal.ByteString) ->
+                 case Text.Read.readEither6
+                        @ GHC.Types.Int
+                        (Text.ParserCombinators.ReadP.run
+                           @ GHC.Types.Int
+                           Handlers.AddHandler.readB6
+                           (case x of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                            Data.ByteString.Internal.$wunpackAppendCharsLazy
+                              ww1
+                              ww2
+                              ww3
+                              ww4
+                              (GHC.Types.[] @ GHC.Types.Char) })) of wild {
+                   [] -> Handlers.AddHandler.readB5
+                   : x1 ds
+                   -> case ds of wild1 {
+                        [] -> x1 : ipv ipv1 -> Handlers.AddHandler.readB4 } }) -}
+bacd57edc5976b21e161f2beb9a9d0bb
+  readB8_$sreadB8 ::
+    Data.ByteString.Internal.ByteString -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <L,1*U(U,U,U,U)>,
+     Unfolding: (\ (x :: Data.ByteString.Internal.ByteString) ->
+                 case Text.Read.readEither6
+                        @ GHC.Integer.Type.Integer
+                        (Text.ParserCombinators.ReadP.run
+                           @ GHC.Integer.Type.Integer
+                           Handlers.AddHandler.readB3
+                           (case x of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                            Data.ByteString.Internal.$wunpackAppendCharsLazy
+                              ww1
+                              ww2
+                              ww3
+                              ww4
+                              (GHC.Types.[] @ GHC.Types.Char) })) of wild {
+                   [] -> Handlers.AddHandler.readB2
+                   : x1 ds
+                   -> case ds of wild1 {
+                        [] -> x1 : ipv ipv1 -> Handlers.AddHandler.readB1 } }) -}
+379519677bcb1dace96fe138988bcd7a
+  realSimp ::
+    (GHC.Real.Integral a, GHC.Classes.Eq b) =>
+    Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U,A,A,A,A,A,A,A,C(U))><L,U(C(C1(U)),A)><S,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   ($dIntegral :: GHC.Real.Integral a)
+                   ($dEq :: GHC.Classes.Eq b)
+                   (eta :: Handlers.AddHandler.Poly a b) ->
+                 let {
+                   $dEq1 :: GHC.Real.Real a = GHC.Real.$p1Integral @ a $dIntegral
+                 } in
+                 let {
+                   $dEq2 :: GHC.Classes.Ord a = GHC.Real.$p2Real @ a $dEq1
+                 } in
+                 let {
+                   $dEq3 :: GHC.Classes.Eq a = GHC.Classes.$p1Ord @ a $dEq2
+                 } in
+                 letrec {
+                   realSimp1 :: Handlers.AddHandler.Poly a b
+                                -> Handlers.AddHandler.Poly a b
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (p :: Handlers.AddHandler.Poly a b) ->
+                     case Handlers.AddHandler.$fEqPoly_$c==
+                            @ a
+                            @ b
+                            $dEq3
+                            $dEq
+                            p
+                            (Handlers.AddHandler.simplify @ b @ a $dEq $dIntegral p) of wild {
+                       GHC.Types.False
+                       -> realSimp1
+                            (Handlers.AddHandler.simplify @ b @ a $dEq $dIntegral p)
+                       GHC.Types.True -> p }
+                 } in
+                 realSimp1 eta) -}
+ddd9bc3047bc8bd09c109cbd007b1f03
+  showB8 ::
+    GHC.Show.Show a => a -> Data.ByteString.Internal.ByteString
+  {- Arity: 2, Strictness: <S(LC(S)L),1*U(A,1*C1(U),A)><L,U>,
+     Unfolding: (\ @ a ($dShow :: GHC.Show.Show a) (x :: a) ->
+                 let {
+                   cs :: [GHC.Types.Char] = GHC.Show.show @ a $dShow x
+                 } in
+                 case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww2 { DEFAULT ->
+                 Data.ByteString.Internal.$wunsafePackLenChars ww2 cs }) -}
+eedcc4da5c5f93fb26aad26c7c19011a
+  simplify ::
+    (GHC.Classes.Eq b, GHC.Real.Integral a) =>
+    Handlers.AddHandler.Poly a b -> Handlers.AddHandler.Poly a b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(1*U,A,A,A,A,A,A,A,C(U))><S,1*U> -}
+c00f47db204cf7d602e07f33466c3209
+  writeStream ::
+    (GHC.Show.Show a, Snap.Internal.Core.MonadSnap m) => a -> m ()
+  {- Arity: 3,
+     Strictness: <L,1*U(A,1*C1(U),A)><S(LLLLLLLC(S)),U(A,A,U,A,A,A,A,C(U))><L,U>,
+     Unfolding: (\ @ (m :: * -> *)
+                   @ a
+                   ($dShow :: GHC.Show.Show a)
+                   ($dMonadSnap :: Snap.Internal.Core.MonadSnap m)
+                   (x :: a) ->
+                 let {
+                   x1 :: Data.ByteString.Internal.ByteString
+                   = let {
+                       cs :: [GHC.Types.Char] = GHC.Show.show @ a $dShow x
+                     } in
+                     case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww2 { DEFAULT ->
+                     Data.ByteString.Internal.$wunsafePackLenChars ww2 cs }
+                 } in
+                 let {
+                   $weta :: forall r.
+                            Data.ByteString.Builder.Internal.BuildStep r
+                            -> GHC.Prim.Addr#
+                            -> GHC.Prim.Addr#
+                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                            -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                  Data.ByteString.Builder.Internal.BuildSignal r #)
+                     {- Arity: 4, Strictness: <S,1*U><L,U><L,U><S,U>, Inline: [0] -}
+                   = \ @ r
+                       (w :: Data.ByteString.Builder.Internal.BuildStep r)
+                       (ww :: GHC.Prim.Addr#)
+                       (ww1 :: GHC.Prim.Addr#)
+                       (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case x1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                     case w of k1 { DEFAULT ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# dt3 8160#) of wild2 {
+                       GHC.Types.False
+                       -> (# w1,
+                             Data.ByteString.Builder.Internal.InsertChunk @ r ww wild k1 #)
+                       GHC.Types.True
+                       -> let {
+                            op' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# ww dt3
+                          } in
+                          let {
+                            ip :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt dt2
+                          } in
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.leAddr# op' ww1) of wild3 {
+                            GHC.Types.False
+                            -> Data.ByteString.Builder.Internal.$wwrappedBytesCopyStep
+                                 @ r
+                                 ip
+                                 (GHC.Prim.plusAddr# ip dt3)
+                                 (\ (br1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                    (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                  case GHC.Prim.touch#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ GHC.ForeignPtr.ForeignPtrContents
+                                         dt1
+                                         eta2 of s' { DEFAULT ->
+                                  (k1 br1)
+                                    `cast`
+                                  (GHC.Types.N:IO[0]
+                                       <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                    s' })
+                                   `cast`
+                                 (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                                 ww
+                                 ww1
+                                 w1
+                            GHC.Types.True
+                            -> case {__pkg_ccall base-4.9.1.0 memcpy GHC.Prim.Addr#
+                                                                     -> GHC.Prim.Addr#
+                                                                     -> GHC.Prim.Word#
+                                                                     -> GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld
+                                                                     -> (# GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld,
+                                                                           GHC.Prim.Addr# #)}
+                                      ww
+                                      ip
+                                      (GHC.Prim.int2Word# dt3)
+                                      w1 of wild1 { (#,#) ds4 ds5 ->
+                               case GHC.Prim.touch#
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ GHC.ForeignPtr.ForeignPtrContents
+                                      dt1
+                                      ds4 of s' { DEFAULT ->
+                               (k1 (Data.ByteString.Builder.Internal.BufferRange op' ww1))
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.ByteString.Builder.Internal.BuildSignal r>_R)
+                                 s' } } } } } }
+                 } in
+                 let {
+                   eta :: forall r.
+                          Data.ByteString.Builder.Internal.BuildStep r
+                          -> Data.ByteString.Builder.Internal.BufferRange
+                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Data.ByteString.Builder.Internal.BuildSignal r #)
+                     {- Arity: 3, Strictness: <S,1*U><S,1*U(U,U)><S,U>,
+                        Inline: INLINE[0],
+                        Unfolding: InlineRule (3, True, False)
+                                   (\ @ r
+                                      (w :: Data.ByteString.Builder.Internal.BuildStep r)
+                                      (w1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                      (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case w1 of ww { Data.ByteString.Builder.Internal.BufferRange ww1 ww2 ->
+                                    $weta @ r w ww1 ww2 w2 }) -}
+                   = \ @ r
+                       (w :: Data.ByteString.Builder.Internal.BuildStep r)
+                       (w1 :: Data.ByteString.Builder.Internal.BufferRange)
+                       (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case w1 of ww { Data.ByteString.Builder.Internal.BufferRange ww1 ww2 ->
+                     $weta @ r w ww1 ww2 w2 }
+                 } in
+                 let {
+                   lvl107 :: GHC.Base.Maybe Data.ByteString.Builder.Internal.Builder
+                   = GHC.Base.Just
+                       @ Data.ByteString.Builder.Internal.Builder
+                       eta
+                         `cast`
+                       (Trans
+                            (forall (r :: <*>_N).
+                             <Data.ByteString.Builder.Internal.BuildStep r>_R
+                             ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                             ->_R Sym (GHC.Types.N:IO[0]
+                                           <Data.ByteString.Builder.Internal.BuildSignal r>_R))
+                            (Sym (Data.ByteString.Builder.Internal.N:Builder[0])))
+                 } in
+                 let {
+                   $dMonadBaseControl :: Control.Monad.Trans.Control.MonadBaseControl
+                                           GHC.Types.IO m
+                   = Snap.Internal.Core.$p3MonadSnap @ m $dMonadSnap
+                 } in
+                 let {
+                   $dMonadBase :: Control.Monad.Base.MonadBase GHC.Types.IO m
+                   = Control.Monad.Trans.Control.$p1MonadBaseControl
+                       @ GHC.Types.IO
+                       @ m
+                       $dMonadBaseControl
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad GHC.Types.IO
+                   = Control.Monad.Base.$p3MonadBase @ GHC.Types.IO @ m $dMonadBase
+                 } in
+                 Snap.Internal.Core.addToOutput
+                   @ m
+                   $dMonadSnap
+                   (\ (str :: System.IO.Streams.Internal.OutputStream
+                                Data.ByteString.Builder.Internal.Builder) ->
+                    GHC.Base.>>
+                      @ GHC.Types.IO
+                      $dMonad
+                      @ ()
+                      @ (System.IO.Streams.Internal.OutputStream
+                           Data.ByteString.Builder.Internal.Builder)
+                      (case str of wild { System.IO.Streams.Internal.OutputStream ds1 ->
+                       ds1 lvl107 })
+                      (GHC.Base.return
+                         @ GHC.Types.IO
+                         $dMonad
+                         @ (System.IO.Streams.Internal.OutputStream
+                              Data.ByteString.Builder.Internal.Builder)
+                         str))) -}
+b2d309ae5fec799fdb9563a079488817
+  writeStream1 ::
+    Data.Matrix.Matrix GHC.Integer.Type.Integer
+    -> forall r.
+       (() -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+       -> (Snap.Internal.Core.Zero
+           -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+       -> Snap.Internal.Core.SnapState
+       -> GHC.Prim.State# GHC.Prim.RealWorld
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld, r #)
+  {- Arity: 5,
+     Strictness: <L,1*U(U,U,U,U,U,U(U,U,U))><L,U><L,U><L,U><S,U>,
+     Unfolding: (\ (x :: Data.Matrix.Matrix GHC.Integer.Type.Integer)
+                   @ r
+                   (eta :: () -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+                   (eta1 :: Snap.Internal.Core.Zero
+                            -> Snap.Internal.Core.SnapState -> GHC.Types.IO r)
+                   (eta2 :: Snap.Internal.Core.SnapState)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 let {
+                   x1 :: Data.ByteString.Internal.ByteString
+                   = case x of ww { Data.Matrix.M ww1 ww2 ww3 ww4 ww5 ww6 ->
+                     let {
+                       cs :: [GHC.Types.Char]
+                       = Data.Matrix.$wprettyMatrix
+                           @ GHC.Integer.Type.Integer
+                           GHC.Show.$fShowInteger
+                           ww1
+                           ww2
+                           ww3
+                           ww4
+                           ww5
+                           ww6
+                     } in
+                     case GHC.List.$wlenAcc @ GHC.Types.Char cs 0# of ww7 { DEFAULT ->
+                     Data.ByteString.Internal.$wunsafePackLenChars ww7 cs } }
+                 } in
+                 let {
+                   $weta :: forall r1.
+                            Data.ByteString.Builder.Internal.BuildStep r1
+                            -> GHC.Prim.Addr#
+                            -> GHC.Prim.Addr#
+                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                            -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                  Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                     {- Arity: 4, Strictness: <S,1*U><L,U><L,U><S,U>, Inline: [0] -}
+                   = \ @ r1
+                       (w :: Data.ByteString.Builder.Internal.BuildStep r1)
+                       (ww :: GHC.Prim.Addr#)
+                       (ww1 :: GHC.Prim.Addr#)
+                       (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case x1 of wild { Data.ByteString.Internal.PS dt dt1 dt2 dt3 ->
+                     case w of k1 { DEFAULT ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<=# dt3 8160#) of wild2 {
+                       GHC.Types.False
+                       -> (# w1,
+                             Data.ByteString.Builder.Internal.InsertChunk @ r1 ww wild k1 #)
+                       GHC.Types.True
+                       -> let {
+                            op' :: GHC.Prim.Addr# = GHC.Prim.plusAddr# ww dt3
+                          } in
+                          let {
+                            ip :: GHC.Prim.Addr# = GHC.Prim.plusAddr# dt dt2
+                          } in
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.leAddr# op' ww1) of wild3 {
+                            GHC.Types.False
+                            -> Data.ByteString.Builder.Internal.$wwrappedBytesCopyStep
+                                 @ r1
+                                 ip
+                                 (GHC.Prim.plusAddr# ip dt3)
+                                 (\ (br1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                    (eta4 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                  case GHC.Prim.touch#
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ GHC.ForeignPtr.ForeignPtrContents
+                                         dt1
+                                         eta4 of s' { DEFAULT ->
+                                  (k1 br1)
+                                    `cast`
+                                  (GHC.Types.N:IO[0]
+                                       <Data.ByteString.Builder.Internal.BuildSignal r1>_R)
+                                    s' })
+                                   `cast`
+                                 (<Data.ByteString.Builder.Internal.BufferRange>_R
+                                  ->_R Sym (GHC.Types.N:IO[0]
+                                                <Data.ByteString.Builder.Internal.BuildSignal
+                                                   r1>_R))
+                                 ww
+                                 ww1
+                                 w1
+                            GHC.Types.True
+                            -> case {__pkg_ccall base-4.9.1.0 memcpy GHC.Prim.Addr#
+                                                                     -> GHC.Prim.Addr#
+                                                                     -> GHC.Prim.Word#
+                                                                     -> GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld
+                                                                     -> (# GHC.Prim.State#
+                                                                             GHC.Prim.RealWorld,
+                                                                           GHC.Prim.Addr# #)}
+                                      ww
+                                      ip
+                                      (GHC.Prim.int2Word# dt3)
+                                      w1 of wild1 { (#,#) ds4 ds5 ->
+                               case GHC.Prim.touch#
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ GHC.ForeignPtr.ForeignPtrContents
+                                      dt1
+                                      ds4 of s' { DEFAULT ->
+                               (k1 (Data.ByteString.Builder.Internal.BufferRange op' ww1))
+                                 `cast`
+                               (GHC.Types.N:IO[0]
+                                    <Data.ByteString.Builder.Internal.BuildSignal r1>_R)
+                                 s' } } } } } }
+                 } in
+                 let {
+                   eta4 :: forall r1.
+                           Data.ByteString.Builder.Internal.BuildStep r1
+                           -> Data.ByteString.Builder.Internal.BufferRange
+                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                 Data.ByteString.Builder.Internal.BuildSignal r1 #)
+                     {- Arity: 3, Strictness: <S,1*U><S,1*U(U,U)><S,U>,
+                        Inline: INLINE[0],
+                        Unfolding: InlineRule (3, True, False)
+                                   (\ @ r1
+                                      (w :: Data.ByteString.Builder.Internal.BuildStep r1)
+                                      (w1 :: Data.ByteString.Builder.Internal.BufferRange)
+                                      (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case w1 of ww { Data.ByteString.Builder.Internal.BufferRange ww1 ww2 ->
+                                    $weta @ r1 w ww1 ww2 w2 }) -}
+                   = \ @ r1
+                       (w :: Data.ByteString.Builder.Internal.BuildStep r1)
+                       (w1 :: Data.ByteString.Builder.Internal.BufferRange)
+                       (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case w1 of ww { Data.ByteString.Builder.Internal.BufferRange ww1 ww2 ->
+                     $weta @ r1 w ww1 ww2 w2 }
+                 } in
+                 let {
+                   lvl107 :: GHC.Base.Maybe Data.ByteString.Builder.Internal.Builder
+                   = GHC.Base.Just
+                       @ Data.ByteString.Builder.Internal.Builder
+                       eta4
+                         `cast`
+                       (Trans
+                            (forall (r1 :: <*>_N).
+                             <Data.ByteString.Builder.Internal.BuildStep r1>_R
+                             ->_R <Data.ByteString.Builder.Internal.BufferRange>_R
+                             ->_R Sym (GHC.Types.N:IO[0]
+                                           <Data.ByteString.Builder.Internal.BuildSignal r1>_R))
+                            (Sym (Data.ByteString.Builder.Internal.N:Builder[0])))
+                 } in
+                 ((Snap.Internal.Core.addToOutput
+                     @ Snap.Internal.Core.Snap
+                     Snap.Internal.Core.$fMonadSnapSnap
+                     (\ (str :: System.IO.Streams.Internal.OutputStream
+                                  Data.ByteString.Builder.Internal.Builder)
+                        (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                      case str of wild { System.IO.Streams.Internal.OutputStream ds1 ->
+                      case (ds1 lvl107) `cast` (GHC.Types.N:IO[0] <()>_R)
+                             s of ds2 { (#,#) ipv ipv1 ->
+                      (# ipv, wild #) } })
+                       `cast`
+                     (<System.IO.Streams.Internal.OutputStream
+                         Data.ByteString.Builder.Internal.Builder>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <System.IO.Streams.Internal.OutputStream
+                                       Data.ByteString.Builder.Internal.Builder>_R)))
+                    `cast`
+                  (Snap.Internal.Core.N:Snap[0] <()>_R)
+                    @ r
+                    eta
+                    eta1
+                    eta2)
+                   `cast`
+                 (GHC.Types.N:IO[0] <r>_R)
+                   eta3) -}
+instance GHC.Classes.Eq [Handlers.AddHandler.Poly]
+  = Handlers.AddHandler.$fEqPoly
+instance GHC.Num.Num [Handlers.AddHandler.Poly]
+  = Handlers.AddHandler.$fNumPoly
+instance GHC.Read.Read [Handlers.AddHandler.Poly]
+  = Handlers.AddHandler.$fReadPoly
+instance GHC.Show.Show [Handlers.AddHandler.Poly]
+  = Handlers.AddHandler.$fShowPoly
+"SPEC readB8 @ Int" [ALWAYS] forall ($dRead :: GHC.Read.Read
+                                                 GHC.Types.Int)
+  Handlers.AddHandler.readB8 @ GHC.Types.Int $dRead
+  = Handlers.AddHandler.readB8_$sreadB1
+"SPEC readB8 @ Integer" [ALWAYS] forall ($dRead :: GHC.Read.Read
+                                                     GHC.Integer.Type.Integer)
+  Handlers.AddHandler.readB8 @ GHC.Integer.Type.Integer $dRead
+  = Handlers.AddHandler.readB8_$sreadB8
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

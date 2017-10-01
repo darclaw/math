@@ -51,6 +51,8 @@
 \begin{document}
 axioms for 3-group: 
 
+closed 
+
 identity: $a=\triEqualRotations{a}{0}{0}$ 
 
 inverses: $0=\triEqualPermutations{a}{a\inv}{0}$
@@ -137,5 +139,58 @@ The others follow similar form
       \end{aligned}
    \end{equation}
 \end{proof}
+
+
+axioms for 3Monad-2Id: 
+
+closed
+
+identity: $a=\tri{a}{0}{0}=\tri{0}{0}{a} \neq \tri{0}{a}{0}$
+
+associative: 
+$\tri{\tri{a}{b}{c}}{\tri{d}{e}{f}}{\tri{g}{h}{i}}
+=\tri{\tri{\tri{a}{b}{c}}{d}{g}}{\tri{0}{e}{f}}{\tri{0}{h}{i}}
+=\tri{\tri{a}{0}{c} }{ \tri{b}{ \tri{d}{e}{f} }{h}}{\tri{g}{0}{i}}
+=\tri{\tri{a}{b}{0}}{\tri{d}{e}{0}}{\tri{c}{f}{\tri{g}{h}{i}}}$
+
+\begin{theorem}[3Monad-2Id]
+For every 3Mondad-2Id there exists an equivalent half communitive Monad. That is a Monad where for every element there exists an element that communtes.
+\end{theorem}
+
+\begin{lemma}
+   $\tri{a}{b}{c}=\tri{a}{0}{\tri{\tri{0}{b}{0}}{0}{c}}=\tri{a}{0}{\tri{c}{0}{\tri{0}{b}{0}}}=\tri{\tri{\tri{0}{b}{0}}{0}{a}}{0}{c}$
+\end{lemma}
+
+\begin{proof}
+   \begin{equation}
+      \begin{aligned}
+         \tri{a}{b}{c} &= \tri{\tri{a}{0}{0}}{\tri{0}{0}{b}}{\tri{0}{0}{c}} &\text{identity} \\
+                       &= \tri{\tri{a}{0}{0}}{\tri{0}{0}{0}}{\tri{0}{b}{\tri{0}{0}{c}}} &\text{associative} \\
+                       &= \tri{a}{0}{\tri{0}{\tri{b}{0}{0}}{\tri{0}{0}{c}}} &\text{identity} \\
+                       &= \tri{a}{0}{\tri{\tri{0}{b}{0}}{\tri{0}{0}{0}}{\tri{0}{0}{c}}} &\text{associative} \\
+                       &= \tri{a}{0}{\tri{\tri{0}{b}{0}}{0}{c}} &\text{identiy}
+      \end{aligned}
+      \vline
+      \begin{aligned}
+         \tri{a}{b}{c} &= \tri{\tri{a}{0}{0}}{\tri{0}{0}{b}}{\tri{c}{0}{0}} &\text{identity} \\
+                       &= \tri{\tri{a}{0}{0}}{\tri{0}{0}{0}}{\tri{0}{b}{\tri{c}{0}{0}}} &\text{associative} \\
+                       &= \tri{a}{0}{\tri{0}{\tri{0}{0}{b}}{\tri{c}{0}{0}}} &\text{identity} \\
+                       &= \tri{a}{0}{\tri{\tri{0}{0}{c}}{\tri{0}{0}{b}}{\tri{0}{0}{0}}} &\text{associative} \\
+                       &= \tri{a}{0}{\tri{\tri{c}{0}{0}}{\tri{0}{0}{b}}{\tri{0}{0}{0}}} &\text{identity} \\
+                       &= \tri{a}{0}{\tri{\tri{c}{0}{0}}{0}{\tri{0}{b}{0}}} &\text{associativie} \\
+                       &= \tri{a}{0}{\tri{c}{0}{\tri{0}{b}{0}}} &\text{identiy}
+      \end{aligned}
+
+      \begin{aligned}
+         \tri{a}{b}{c} &= \tri{\tri{0}{0}{a}}{\tri{b}{0}{0}}{\tri{0}{0}{c}} &\text{identity} \\
+                       &= \tri{\tri{0}{b}{a}}{\tri{0}{0}{0}}{\tri{0}{0}{c}} &\text{associative} \\
+                       &= \tri{\tri{\tri{0}{0}{0}}{\tri{b}{0}{0}}{\tri{0}{0}{a}}}{0}{c} &\text{identity} \\
+                       &= \tri{\tri{\tri{0}{b}{0}}{\tri{0}{0}{0}}{\tri{0}{0}{a}}}{0}{c} &\text{associative} \\
+                       &= \tri{\tri{\tri{0}{b}{0}}{0}{a}}{0}{c} &\text{identity}
+      \end{aligned}
+   \end{equation}
+\end{proof}
+
+
 
 \end{document}

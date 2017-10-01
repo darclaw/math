@@ -1,0 +1,57 @@
+Configuring snap-extras-0.12.0.0...
+Building snap-extras-0.12.0.0...
+Preprocessing library snap-extras-0.12.0.0...
+[ 1 of 16] Compiling Snap.Extras.TextUtils ( src/Snap/Extras/TextUtils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/TextUtils.o )
+[ 2 of 16] Compiling Snap.Extras.Tabs ( src/Snap/Extras/Tabs.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/Tabs.o )
+[ 3 of 16] Compiling Snap.Extras.SpliceUtils.Common ( src/Snap/Extras/SpliceUtils/Common.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/SpliceUtils/Common.o )
+[ 4 of 16] Compiling Snap.Extras.SpliceUtils.Interpreted ( src/Snap/Extras/SpliceUtils/Interpreted.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/SpliceUtils/Interpreted.o )
+[ 5 of 16] Compiling Snap.Extras.SpliceUtils.Compiled ( src/Snap/Extras/SpliceUtils/Compiled.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/SpliceUtils/Compiled.o )
+[ 6 of 16] Compiling Snap.Extras.NavTrails ( src/Snap/Extras/NavTrails.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/NavTrails.o )
+
+src/Snap/Extras/NavTrails.hs:13:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[ 7 of 16] Compiling Snap.Extras.MethodOverride ( src/Snap/Extras/MethodOverride.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/MethodOverride.o )
+[ 8 of 16] Compiling Snap.Extras.FormUtils ( src/Snap/Extras/FormUtils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/FormUtils.o )
+[ 9 of 16] Compiling Snap.Extras.FlashNotice ( src/Snap/Extras/FlashNotice.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/FlashNotice.o )
+
+src/Snap/Extras/FlashNotice.hs:20:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[10 of 16] Compiling Snap.Extras.CoreUtils ( src/Snap/Extras/CoreUtils.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/CoreUtils.o )
+[11 of 16] Compiling Snap.Extras.JSON ( src/Snap/Extras/JSON.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/JSON.o )
+[12 of 16] Compiling Snap.Extras.CSRF ( src/Snap/Extras/CSRF.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/CSRF.o )
+[13 of 16] Compiling Snap.Extras.Ajax ( src/Snap/Extras/Ajax.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/Ajax.o )
+[14 of 16] Compiling Snap.Extras.PollStatus ( src/Snap/Extras/PollStatus.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras/PollStatus.o )
+
+src/Snap/Extras/PollStatus.hs:92:1: warning: [-Wunused-imports]
+    The import of ‘Blaze.ByteString.Builder’ is redundant
+      except perhaps to import instances from ‘Blaze.ByteString.Builder’
+    To import instances alone, use: import Blaze.ByteString.Builder()
+
+src/Snap/Extras/PollStatus.hs:94:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Snap/Extras/PollStatus.hs:101:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+src/Snap/Extras/PollStatus.hs:110:1: warning: [-Wunused-imports]
+    The import of ‘Snap.Core’ is redundant
+      except perhaps to import instances from ‘Snap.Core’
+    To import instances alone, use: import Snap.Core()
+[15 of 16] Compiling Paths_snap_extras ( .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/Paths_snap_extras.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Paths_snap_extras.o )
+[16 of 16] Compiling Snap.Extras      ( src/Snap/Extras.hs, .stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/Snap/Extras.o )
+
+src/Snap/Extras.hs:18:1: warning: [-Wunused-imports]
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+Installing library in
+/media/home/darclaw/projects/math/math-repository/rmathbk/.stack-work/install/x86_64-linux/ghc-8.0.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/snap-extras-0.12.0.0-1BX03a76bH53yBBc7YwLgN
+Registering snap-extras-0.12.0.0...

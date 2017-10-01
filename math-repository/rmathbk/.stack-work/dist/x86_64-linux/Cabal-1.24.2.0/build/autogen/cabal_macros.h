@@ -21,12 +21,33 @@
   (major1) == 0 && (major2) <  10 || \
   (major1) == 0 && (major2) == 10 && (minor) <= 8)
 
+/* package containers-0.5.7.1 */
+#define VERSION_containers "0.5.7.1"
+#define MIN_VERSION_containers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 7)
+
+/* package matrix-0.3.5.0 */
+#define VERSION_matrix "0.3.5.0"
+#define MIN_VERSION_matrix(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 5)
+
 /* package monad-control-1.0.1.0 */
 #define VERSION_monad_control "1.0.1.0"
 #define MIN_VERSION_monad_control(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  0 || \
   (major1) == 1 && (major2) == 0 && (minor) <= 1)
+
+/* package mongoDB-2.3.0 */
+#define VERSION_mongoDB "2.3.0"
+#define MIN_VERSION_mongoDB(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  3 || \
+  (major1) == 2 && (major2) == 3 && (minor) <= 0)
 
 /* package mtl-2.2.1 */
 #define VERSION_mtl "2.2.1"
@@ -35,6 +56,13 @@
   (major1) == 2 && (major2) <  2 || \
   (major1) == 2 && (major2) == 2 && (minor) <= 1)
 
+/* package random-1.1 */
+#define VERSION_random "1.1"
+#define MIN_VERSION_random(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  1 || \
+  (major1) == 1 && (major2) == 1 && (minor) <= 0)
+
 /* package snap-core-1.0.2.0 */
 #define VERSION_snap_core "1.0.2.0"
 #define MIN_VERSION_snap_core(major1,major2,minor) (\
@@ -42,12 +70,33 @@
   (major1) == 1 && (major2) <  0 || \
   (major1) == 1 && (major2) == 0 && (minor) <= 2)
 
+/* package snap-extras-0.12.0.0 */
+#define VERSION_snap_extras "0.12.0.0"
+#define MIN_VERSION_snap_extras(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  12 || \
+  (major1) == 0 && (major2) == 12 && (minor) <= 0)
+
 /* package snap-server-1.0.2.0 */
 #define VERSION_snap_server "1.0.2.0"
 #define MIN_VERSION_snap_server(major1,major2,minor) (\
   (major1) <  1 || \
   (major1) == 1 && (major2) <  0 || \
   (major1) == 1 && (major2) == 0 && (minor) <= 2)
+
+/* tool alex-3.2.1 */
+#define TOOL_VERSION_alex "3.2.1"
+#define MIN_TOOL_VERSION_alex(major1,major2,minor) (\
+  (major1) <  3 || \
+  (major1) == 3 && (major2) <  2 || \
+  (major1) == 3 && (major2) == 2 && (minor) <= 1)
+
+/* tool cpphs-1.20.5 */
+#define TOOL_VERSION_cpphs "1.20.5"
+#define MIN_TOOL_VERSION_cpphs(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  20 || \
+  (major1) == 1 && (major2) == 20 && (minor) <= 5)
 
 /* tool gcc-6.3.1 */
 #define TOOL_VERSION_gcc "6.3.1"
@@ -76,6 +125,13 @@
   (major1) <  2 || \
   (major1) == 2 && (major2) <  17 || \
   (major1) == 2 && (major2) == 17 && (minor) <= 3)
+
+/* tool happy-1.19.5 */
+#define TOOL_VERSION_happy "1.19.5"
+#define MIN_TOOL_VERSION_happy(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  19 || \
+  (major1) == 1 && (major2) == 19 && (minor) <= 5)
 
 /* tool hpc-0.67 */
 #define TOOL_VERSION_hpc "0.67"

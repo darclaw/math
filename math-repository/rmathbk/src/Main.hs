@@ -5,6 +5,7 @@ import Control.Applicative
 import Snap.Core
 import Snap.Util.FileServe
 import Snap.Http.Server
+import qualified Handlers.AddHandler as AddHandler
 
 main :: IO ()
 main = quickHttpServe site
@@ -17,6 +18,7 @@ site =
     route [ ("foo", writeBS "bwr")
           , ("echo/:echoparam", echoHandler)
           , ("create", createHandler)
+          , ("add", AddHandler.add)
           ] <|>
     dir "static" (serveDirectory staticdir)
 
