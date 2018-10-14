@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="other/lhs.css">
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<h1 id="fishgroup">fishGroup</h1>
+<p><a href="https://travis-ci.org/githubuser/fishGroup"><img src="https://travis-ci.org/githubuser/fishGroup.png" alt="Build Status" /></a></p>
+<p>See https://githubuser.github.io/fishGroup/index.html for project description.</p>
+<pre><code>stack build --test --exec &quot;$(stack path --local-install-root)/bin/fishGroup-example&quot; --exec &quot;$(stack path --local-bin)/pandoc -f markdown+lhs -i app/example.lhs -t html -o index.html --filter pandoc-include --mathjax&quot; --file-watch</code></pre>
+<pre class="include"><code>other/header.md</code></pre>
+<h1 id="fishgroup-1">fishGroup</h1>
+<h2 id="ghc-options"><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/flags.html#flag-reference">ghc options</a></h2>
+<p>\begin{code} {-# OPTIONS_GHC -Wall #-} {-# OPTIONS_GHC -fno-warn-type-defaults #-} \end{code}</p>
+<h2 id="pragmas"><a href="https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/lang.html">pragmas</a></h2>
+
+<h2 id="libraries"><a href="https://www.stackage.org/">libraries</a></h2>
+<ul class="incremental">
+<li><a href="https://www.stackage.org/package/protolude">protolude</a></li>
+<li><a href="https://www.stackage.org/package/optparse-generic">optparse-generic</a></li>
+</ul>
+
+<h2 id="code">code</h2>
+<ul class="incremental">
+<li><a href="https://www.stackage.org/package/hoogle">hoogle</a></li>
+</ul>
+
+<h2 id="output">output</h2>
+<pre class="include"><code>other/answer.md</code></pre>
+<h2 id="tests">tests</h2>
+<ul class="incremental">
+<li><a href="https://www.stackage.org/package/doctest">doctest</a></li>
+</ul>
+
+<hr />
+<div class="footer">
+<p>Powered by <a href="https://haskell-lang.org/">haskell</a>, <a href="https://docs.haskellstack.org/en/stable/README/">stack</a> and <a href="http://pandoc.org/">pandoc</a>.</p>
+</div>
